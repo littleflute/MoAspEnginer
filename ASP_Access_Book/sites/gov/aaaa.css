@@ -1,0 +1,5 @@
+body      { font-size: 10.4pt ;}
+td        { font-size: 10.4pt ;}
+.normal   {  <%=m_button%> ; font-size: 10.4pt}
+.over     {  <%=m_buttonover%> ; font-size: 10.4pt}
+.down     {  <%=m_buttondown%> ; font-size: 10.4pt}

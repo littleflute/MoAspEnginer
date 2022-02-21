@@ -1,0 +1,230 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0047)http://www.baron.com.cn/javascript/bm/shu11.htm -->
+<HTML><HEAD><TITLE>字符围绕鼠标</TITLE>
+<STYLE type=text/css>BODY {
+	MARGIN-TOP: 0px; FONT-SIZE: 9pt; MARGIN-LEFT: 0px; MARGIN-RIGHT: 0px; FONT-FAMILY: "宋体"
+}
+A {
+	FONT-WEIGHT: 400; FONT-SIZE: 9pt; COLOR: black; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-WEIGHT: 400; FONT-SIZE: 9pt; COLOR: red; TEXT-DECORATION: underline
+}
+A:active {
+	FONT: 9pt "宋体"; CURSOR: hand; COLOR: #ff0033
+}
+</STYLE>
+
+<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<META content="MSHTML 6.00.2900.2873" name=GENERATOR></HEAD>
+<BODY>
+<table width="282" border="0" align="center" cellpadding="0" cellspacing="0">
+  <!-- fwtable fwsrc="未命名" fwbase="list_01.jpg" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="0" -->
+  <tr> 
+    <td><img src="spacer.gif" width="25" height="1" border="0" alt=""></td>
+    <td><img src="spacer.gif" width="58" height="1" border="0" alt=""></td>
+    <td><img src="spacer.gif" width="86" height="1" border="0" alt=""></td>
+    <td><img src="spacer.gif" width="56" height="1" border="0" alt=""></td>
+    <td><img src="spacer.gif" width="15" height="1" border="0" alt=""></td>
+    <td><img src="spacer.gif" width="42" height="1" border="0" alt=""></td>
+    <td><img src="spacer.gif" width="1" height="1" border="0" alt=""></td>
+  </tr>
+  <tr> 
+    <td colspan="2" background="list_01_r1_c3.jpg"><img name="list_01_r1_c1" src="list_01_r1_c1.jpg" width="83" height="102" border="0" alt=""></td>
+    <td colspan="2" background="list_01_r1_c3.jpg"><img src="list_01_r1_c3.jpg" width="548" height="102"></td>
+    <td colspan="2" background="list_01_r1_c3.jpg">
+<div align="right"><img name="list_01_r1_c5" src="list_01_r1_c5.jpg" width="57" height="102" border="0" alt=""></div></td>
+    <td><img src="spacer.gif" width="1" height="102" border="0" alt=""></td>
+  </tr>
+  <tr> 
+    <td background="list_01_r2_c1.jpg"><img name="list_01_r2_c1" src="list_01_r2_c1.jpg" width="25" height="450" border="0" alt=""></td>
+    <td colspan="4" valign="top"> <div align="center"> 
+        <table width="100%" border="0" cellpadding="5" cellspacing="5">
+          <tr> 
+            <td bgcolor="#FFE495"> <div align="center"><FONT face=隶书 color=red size=6>字符围绕鼠标</FONT></div></td>
+          </tr>
+          <tr> 
+            <td bgcolor="#FFFFDD"> <div align="center"><strong>演示效果</strong></div></td>
+          </tr>
+          <tr> 
+            <td><div align="center">
+                <TABLE >
+                  <TBODY>
+                    <TR> 
+                      <TD align=middle><FONT face="Arial, Helvetica, sans-serif" color=red 
+      size=5><STRONG>动一下鼠标看看!</STRONG></FONT></TD>
+                    </TR>
+                    <TR> 
+                      <TD align=middle></TD>
+                    </TR>
+                  </TBODY>
+                </TABLE>
+              </div></td>
+          </tr>
+          <tr> 
+            <td bgcolor="#FFFFDD"> <div align="center"><strong>源代码</strong></div></td>
+          </tr>
+          <tr> 
+            <td><div align="center">脚本说明:<br>
+                把如下代码加入&lt;head&gt;区域中<br>
+                &lt;SCRIPT language=javascript&gt;<br>
+                &lt;!--//This is a JS program for Sword Jin's JoyFM homepage.All 
+                rights reserved.<br>
+                var cx=0;<br>
+                var cy=0;<br>
+                var val=0;<br>
+                function locate()<br>
+                { cx=window.event.x;<br>
+                cy=window.event.y;<br>
+                <br>
+                }<br>
+                document.onmousemove=locate;<br>
+                function follow(i)<br>
+                { var x;<br>
+                if(i&lt;4)x=cx-50+i*10;<br>
+                else x=cx-25+i*10;<br>
+                var y=cy-20+Math.floor(Math.random()*40);<br>
+                w=eval(&quot;word&quot;+i);<br>
+                with(w.style)<br>
+                {<br>
+                left=x.toString()+&quot;px&quot;;<br>
+                top=y.toString()+&quot;px&quot;;<br>
+                }<br>
+                }<br>
+                function show(i)<br>
+                { <br>
+                var w=eval(&quot;word&quot;+i);<br>
+                with(w.style)<br>
+                {<br>
+                visibility=&quot;visible&quot;;<br>
+                s=parseInt(fontSize);<br>
+                if(s&gt;=200)s-=100;<br>
+                else if(s&gt;90&amp;&amp;s&lt;=100)<br>
+                {<br>
+                s-=85;<br>
+                clearInterval(val);<br>
+                if(i&lt;5)val=setInterval(&quot;show(&quot;+(i+1)+&quot;)&quot;,20);<br>
+                } <br>
+                fontSize=s;<br>
+                }<br>
+                <br>
+                }<br>
+                function start()<br>
+                { for(i=1;i&lt;=5;i++)<br>
+                {<br>
+                val=setInterval(&quot;show(1)&quot;,20);<br>
+                setInterval(&quot;follow(&quot;+i+&quot;)&quot;,100);<br>
+                <br>
+                }<br>
+                } 
+                <p>//--&gt;<br>
+                  &lt;/SCRIPT&gt;<br>
+                  &lt;SCRIPT language=javascript&gt;<br>
+                  var word=new Array(5);<br>
+                  word[1]=&quot;J&quot;;word[2]=&quot;o&quot;;word[3]=&quot;y&quot;;word[4]=&quot;F&quot;;word[5]=&quot;m&quot;;<br>
+                  for(i=1;i&lt;=5;i++)<br>
+                  document.write(&quot;&lt;div id='word&quot;+i+&quot;' style='width:20px;height:20px;position:absolute;font-size:1000;visibility:hidden'&gt;&lt;font 
+                  face='Forte' color='#00FF00'&gt;&quot;+word[i]+&quot;&lt;/font&gt;&lt;/div&gt;&quot;);start();</p>
+                <p> &lt;/SCRIPT&gt;<br>
+                </p>
+              </div></td>
+          </tr>
+        </table>
+      </div></td>
+    <td background="list_01_r2_c6.jpg"><img name="list_01_r2_c6" src="list_01_r2_c6.jpg" width="42" height="450" border="0" alt=""></td>
+    <td><img src="spacer.gif" width="1" height="450" border="0" alt=""></td>
+  </tr>
+  <tr> 
+    <td background="list_01_r3_c2.jpg"> <div align="left"><img name="list_01_r3_c1" src="list_01_r3_c1.jpg" width="25" height="166" border="0" alt=""></div></td>
+    <td colspan="2" background="list_01_r3_c2.jpg">&nbsp;</td>
+    <td colspan="3" background="list_01_r3_c2.jpg"> <div align="right"><img name="list_01_r3_c4" src="list_01_r3_c4.jpg" width="113" height="166" border="0" alt=""></div></td>
+    <td><img src="spacer.gif" width="1" height="166" border="0" alt=""></td>
+  </tr>
+</table>
+<SCRIPT language=javascript>
+<!--
+var cx=0;
+var cy=0;
+var val=0;
+function locate()
+{	cx=window.event.x;
+	cy=window.event.y;
+	
+}
+document.onmousemove=locate;
+function follow(i)
+{	var x;
+	if(i<4)x=cx-50+i*10;
+	else x=cx-25+i*10;
+	var y=cy-20+Math.floor(Math.random()*40);
+	w=eval("word"+i);
+	with(w.style)
+	{
+	left=x.toString()+"px";
+	top=y.toString()+"px";
+	}
+}
+function show(i)
+{	
+	var w=eval("word"+i);
+	with(w.style)
+	{
+	visibility="visible";
+	s=parseInt(fontSize);
+	if(s>=200)s-=100;
+	else if(s>90&&s<=100)
+		{
+		s-=85;
+		clearInterval(val);
+		if(i<7)val=setInterval("show("+(i+1)+")",20);
+		}	
+	fontSize=s;
+	}
+	
+}
+function start()
+{	for(i=1;i<=7;i++)
+	{
+	val=setInterval("show(1)",20);
+	setInterval("follow("+i+")",100);
+	
+	}
+}	
+
+//-->
+</SCRIPT>
+
+<SCRIPT language=javascript>
+	var word=new Array(7);
+	word[1]="w";word[2]="e";word[3]="l";word[4]="c";word[5]="o";word[6]="m";word[7]="e";
+	for(i=1;i<=7;i++)
+		document.write("<div id='word"+i+"' style='width:20px;height:20px;position:absolute;font-size:1000;visibility:hidden'><font face='Forte' color='#cc0000'>"+word[i]+"</font></div>");start();
+
+	</SCRIPT>
+
+<CENTER>
+
+</CENTER>
+<CENTER>
+</CENTER><BR>
+<CENTER>
+</CENTER><BR><BR>
+<CENTER>
+  <SCRIPT language=JavaScript>
+
+<!-- hide
+
+function goHist(a) 
+
+{
+
+   history.go(a);
+
+}
+
+//-->
+
+</SCRIPT>
+ 
+<FORM method=post>
+  </FORM></CENTER><BR><BR></BODY></HTML>

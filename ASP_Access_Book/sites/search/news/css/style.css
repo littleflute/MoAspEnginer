@@ -1,0 +1,44 @@
+.ddd {COLOR: #ffffff; FILTER: glow(color=black,strength=1); FONT-SIZE: 20pt; LINE-HEIGHT: 20pt; POSITION: relative; WIDTH: 100%}
+body		{ 
+		background: #Ffffff;  
+		font-size: 75%;  
+		font-family: ËÎÌו; 
+                }
+ td{ 
+		font-size:9pt;
+      	  }
+ p{ 
+		font-size:9pt;
+      	  }
+ li{ 
+		font-size:9pt;
+      	  }
+BigFont{
+                font-size:11pt;
+}
+select.smallselsect
+     {
+     font-size:9pt;
+     color:rgb(0,0,128) ;
+     }
+input.smallInput
+     {
+     font-size:9pt;
+     background-color: white;
+     color:rgb(0,0,128) ;
+     }
+textarea.smallarea
+     {
+     font-size:9pt;
+     background-color: white;
+     color: rgb(0,0,128) ;
+     }
+input.buttonface
+     {
+     font-size:9pt;
+     background-color: #0099CC; 
+     color: ffffff ;
+     }
+a:link {color: #0066cc; text-decoration: none}
+a:visited {color: #003399;text-decoration:none}
+a:hover {text-decoration:underline}

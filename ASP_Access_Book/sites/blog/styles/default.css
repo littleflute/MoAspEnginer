@@ -1,0 +1,266 @@
+﻿body {
+	margin: 6px;
+	padding: 0;
+	scrollbar-base-color: #C4E1E1;
+	scrollbar-arrow-color: #000000;
+	font: 12px Tahoma, Verdana, "宋体";
+	color: #000000;
+}
+textarea {
+	background: #Fff;
+	font: normal 12px Tahoma, Verdana, "宋体";
+	background-image:url(../images/txt_bg.jpg);
+	border: 1px solid #000000;
+
+}
+input{
+	border-top: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	border-left: 1px solid #000000;
+	background: #Fff;
+	font: normal 12px Tahoma, Verdana, "宋体";
+	color: #000000;
+}
+.custompage {
+	font: normal 11px Tahoma, Verdana, "宋体";
+	border: 1px solid #CCC;
+	width:15px;
+	height:15px;
+}
+select {
+	color: #000000;
+	background: #FFF;
+	font: 11px Tahoma, Verdana, "宋体";
+}
+table {
+	font: 12px Tahoma, Verdana, "宋体";
+}
+.wordbreak {
+	table-layout: fixed;
+	word-wrap: break-word;
+}
+a:link, a:visited {
+	text-decoration: none;
+	color: #000000;
+	font-family: Tahoma, Verdana, "宋体";
+}
+a:hover {
+	text-decoration: none;
+	color: #db491a;
+	font-family: Tahoma, Verdana, "宋体";
+}
+.header {
+	color: #fff;
+	font: 12px Tahoma, Verdana, "宋体";
+}
+.header a:link {
+	text-decoration: none;
+	color: #fff;
+}
+.header a:visited {
+	text-decoration: none;
+	color: #fff;
+}
+.header a:hover {
+	text-decoration: none;
+	color: #FFFA20;
+}
+.smalltxt {
+	color: #666;
+	font: 11px Tahoma, Verdana, "宋体";
+}
+.code_main {
+	color: #000000;
+	padding: 4px;
+	margin: 2px;
+	border: 1px dashed #CCC;
+	background: #FAFAFA;
+	font: 11px Verdana;
+}
+.code_head {
+	margin: 2px;
+	font: bold 12px Tahoma, Verdana, "宋体";
+}
+.calendar {
+	color: #666;
+	text-align: center;
+	font: 11px Verdana;
+}
+.calendar-week {
+	color: #666;
+	text-align: center;
+	font: bold 11px Tahoma;
+}
+.calendar-today {
+	color: #666;
+	background-image: url(../images/bg_today.gif); 
+	text-align: center;
+	font: 11px Verdana;
+}
+.calendar-thisday {
+	color: #666;
+	background-image: url(../images/bg_thisday.gif);
+	text-align: center;
+	font: 11px Verdana;
+}
+.content_head {
+	width: 100%;
+	padding: 4px;
+	font: 12px Tahoma, Verdana, "宋体";
+	background-image: url(../images/rizhik.gif);
+	border: 1px solid #ccc;
+}
+
+.content_heads {
+	width: 100%;
+	padding: 4px;
+	background: #F3F3F3 url(../images/rizhik.gif);
+	font: 12px Tahoma, Verdana, "宋体";
+	border: 1px solid #CCC;
+
+}
+
+.forums {
+	width: 100%;
+	padding: 3px;
+	margin-left:8px;
+	margin-right:8px;
+	border-right: 1px dashed #CCC;
+	border-bottom: 1px dashed #CCC;
+	border-left: 1px dashed #008000;
+	
+	font: 12px Tahoma, Verdana, "宋体";
+}
+.forum {
+	width: 100%;
+	padding: 3px;
+	margin-left:8px;
+	margin-right:8px;
+	border-right: 1px dashed #F7F7F4;
+	border-bottom: 1px dashed #F7F7F4;
+	border-left: 1px dashed #F7F7F4;
+	
+	font: 12px Tahoma, Verdana, "宋体";
+}
+.content_main {
+	padding: 4px;
+	width: 100%;
+	font: 12px Tahoma, Verdana, "宋体";
+}
+.siderbar_head {
+	width: 100%;
+	padding: 3px;
+	font: bold 12px Tahoma, Verdana, "宋体";
+	background-image: url(../images/l-bg.jpg);
+	border: 1px solid #CCCCCC;
+	text-align: center;
+	color: #FFFFFF;
+}
+.siderbar_main {
+	padding: 4px;
+	width: 100%;
+	font: 12px Tahoma, Verdana, "宋体";
+	color: #000000;
+}
+form {
+	margin: 0;
+	padding: 0;
+}
+.message {
+	position: relative;
+	padding: 18px;
+	width: 95%;
+	text-align: center;
+	font: 12px/140% Tahoma, Verdana, "宋体";
+}
+.hyperlink {
+	border-left-width: 4px;
+	border-left-style: solid;
+	border-left-color: #db491a;
+	margin: 4px 0;
+	width: 142px;
+	padding-left: 6px;
+}
+.msg_head {
+	font-weight: bold;
+	color: #fff;
+	padding: 4px;
+	width: 92%;
+	text-align: center;
+	background: url(../images/l-bg.jpg);
+}
+.msg_content {
+	padding: 24px;
+	width: 92%;
+	text-align: center;
+	border: 1px solid #cccccc;
+}
+.msg_main {
+	padding: 6px;
+	width: 92%;
+	text-align: center;
+	border: 1px solid #cccccc;
+}
+.arrow {
+	font-family: webdings;
+}
+.MagicFace {
+	BORDER-RIGHT: #999 1px dashed; PADDING-RIGHT: 3px; BORDER-TOP: #999 1px dashed; PADDING-LEFT: 3px; FLOAT: right; PADDING-BOTTOM: 1px; BORDER-LEFT: #999 1px dashed; PADDING-TOP: 3px; BORDER-BOTTOM: #999 1px dashed; TEXT-ALIGN: center;
+}
+.bk1 {
+	border: 1px dashed #999999;
+	background-color: #EEF7F7;
+
+}
+.photo_bg{
+	background: #CCCCCC
+}
+.ad_heads {
+	border-top: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+	border-left: 1px solid #ccc;
+	background: #FFFFFF;
+
+}
+.Tag_size1
+{
+     font-size: 12px;
+}
+.Tag_size2
+{
+     font-size: 12px;
+	 font-weight: bold;
+}
+.Tag_size3
+{
+     font-size: 14px;
+}
+.Tag_size4
+{
+     font-size: 14px;
+	 font-weight: bold;
+}
+.bk_1 {
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #CCCCCC;
+	color: #000000;
+}
+.list_rz {
+	line-height: normal;
+	border-bottom-style: none;
+	height: 25px;
+	width: auto;
+	font-size: 12px;
+	color: #408080;
+	font-weight: bold;
+}
+.photobk {
+	background-color: #DBECEC;
+}
+.linkcss {
+	color: #0033ff;
+	font: 11px Tahoma, Verdana, "宋体";
+}

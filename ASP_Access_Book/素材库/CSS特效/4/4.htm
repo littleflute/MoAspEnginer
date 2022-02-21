@@ -1,0 +1,173 @@
+<html>
+  <head>
+    <title> dttimercontrol </title>
+    <script language="javascript">
+      <!--
+          function init(){
+             for (i=1;i<5;i++)
+               setTimeout("start("+i+")",100)
+          }
+          function start(i){
+            obj=eval("div"+i)
+             if(obj.filters.item(0).transition ==23)
+                obj.filters.item(0).transition=1
+             else
+                
+                obj.filters.item(0).transition++
+                 obj.filters.item(0).Apply()
+                               
+                if (obj.innerText=="A"){
+                   obj.style.backgroundColor ="green"
+                   obj.innerText="B"
+         }
+         else {
+             obj.innerText="A"
+             obj.style.backgroundColor="red"
+         }
+         obj.filters.item(0).Play()
+       }
+       function done(i){
+           start(i)
+       }
+       function updateTime(){
+          screen.updateInterval=speed.value
+       }
+      -->
+    </script>
+  <meta http-equiv="Content-Type" content="text/html; charset=gb2312">  <LINK href="fo.css" type=text/css rel=stylesheet></head>
+  
+<body bgcolor="#CCCCCC" background="../lvbgcolor.gif" onload="init()">
+<table width="457" border="0" align="center" cellpadding="0" cellspacing="0">
+  <!-- fwtable fwsrc="未命名" fwbase="07_list.jpg" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="0" -->
+  <tr> 
+    <td><img src="spacer.gif" width="20" height="1" border="0" alt=""></td>
+    <td><img src="spacer.gif" width="410" height="1" border="0" alt=""></td>
+    <td><img src="spacer.gif" width="27" height="1" border="0" alt=""></td>
+    <td><img src="spacer.gif" width="1" height="1" border="0" alt=""></td>
+  </tr>
+  <tr> 
+    <td><img name="n07_list_r1_c1" src="07_list_r1_c1.jpg" width="20" height="54" border="0" alt=""></td>
+    <td background="07_list_r1_c2.jpg"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr> 
+          <td><img src="07_list_r1_c2.jpg" width="0" height="54"></td>
+          <td><img src="07_list_r1_c2.jpg" width="0" height="54"></td>
+        </tr>
+      </table></td>
+    <td><img name="n07_list_r1_c3" src="07_list_r1_c3.jpg" width="27" height="54" border="0" alt=""></td>
+    <td><img src="spacer.gif" width="1" height="54" border="0" alt=""></td>
+  </tr>
+  <tr> 
+    <td background="07_list_r2_c1.jpg">&nbsp;</td>
+    <td valign="top" bgcolor="#FFFFFF"> <p>&nbsp;</p>
+      <table width="100%" border="0" cellpadding="5" cellspacing="5">
+        <tr> 
+          <td bgcolor="#CCCCCC"><div align="center"><strong><font color="#FF0000">文字显示时间间隔</font></strong></div></td>
+        </tr>
+        <tr> 
+          <td bgcolor="#DAEDDA"><div align="center"><strong>演示效果</strong></div></td>
+        </tr>
+        <tr> 
+          <td><br>
+            <span
+            style="position:absolute;top:301px;left:216px;width:400;text-align:center;
+            font-size:12pt"> 
+            <p>输入新的时间间隔。<br>
+              <input name="Input" id="speed" onChange="updateTime()" size="20">
+            </span> <p></p>
+            <div id="div1"
+            style="position:absolute;top:185px;left:264px;width:100;height:100;
+            font-size:100;text-align:center;background-color:blue;
+            filter:revealtrans(transition=1,duration=1.5)"
+            onfilterchange="done(1)"> 
+              <p>A</p>
+            </div>
+            <div id="div2"
+           style="position:absolute;top:185px;left:388px;width:100;height:100;font-size:
+           100;text-align:center;background-color:blue;
+           filter:revealtrans(transition=2,duration=1.5)"
+           onfilterchange="done(2)"> 
+              <p>A</p>
+            </div>
+            <div id="div3"
+          style="position:absolute;top:185px;left:522px;width:100;height:100;font-
+          size:100;text-align:center;background-color:blue;
+          filter:revealtrans(transition=3,duration=1.5)"
+          onfilterchange="done(3)"> 
+              <p>A</p>
+            </div>
+            <div id="div4"
+          style="position:absolute;top:186px;left:653px;width:100;height:100;font-
+           size:100;text-align:center;background-color:blue;
+         filter:revealtrans(transition=4,duration=1.5)"
+          onfilterchange="done(4)"> 
+              <p>A</p>
+            </div> <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br> </td>
+        </tr>
+        <tr> 
+          <td bgcolor="#CCCCCC"><div align="center"><strong>源代码</strong></div></td>
+        </tr>
+        <tr> 
+          <td bgcolor="#CCCCCC"> <table width="100%" border="0">
+              <tr> 
+                <td bgcolor="#FFFFFF"><div align="center"> 
+                    <p align="left"> &lt;span<br>
+                      style=&quot;position:absolute;top:301px;left:216px;width:400;text-align:center;<br>
+                      font-size:12pt&quot;&gt; <br>
+                      &lt;p&gt;输入新的时间间隔。&lt;br&gt;<br>
+                      &lt;input name=&quot;Input&quot; id=&quot;speed&quot; onChange=&quot;updateTime()&quot; 
+                      size=&quot;20&quot;&gt;<br>
+                      &lt;/span&gt; &lt;p&gt;&lt;/p&gt;<br>
+                      &lt;div id=&quot;div1&quot;<br>
+                      style=&quot;position:absolute;top:183px;left:189px;width:100;height:100;<br>
+                      font-size:100;text-align:center;background-color:blue;<br>
+                      filter:revealtrans(transition=1,duration=1.5)&quot;<br>
+                      onfilterchange=&quot;done(1)&quot;&gt; <br>
+                      &lt;p&gt;A&lt;/p&gt;<br>
+                      &lt;/div&gt;<br>
+                      &lt;div id=&quot;div2&quot;<br>
+                      style=&quot;position:absolute;top:185px;left:299px;width:100;height:100;font-size:<br>
+                      100;text-align:center;background-color:blue;<br>
+                      filter:revealtrans(transition=2,duration=1.5)&quot;<br>
+                      onfilterchange=&quot;done(2)&quot;&gt; <br>
+                      &lt;p&gt;A&lt;/p&gt;<br>
+                      &lt;/div&gt;<br>
+                      &lt;div id=&quot;div3&quot;<br>
+                      style=&quot;position:absolute;top:186px;left:420px;width:100;height:100;font-<br>
+                      size:100;text-align:center;background-color:blue;<br>
+                      filter:revealtrans(transition=3,duration=1.5)&quot;<br>
+                      onfilterchange=&quot;done(3)&quot;&gt; <br>
+                      &lt;p&gt;A&lt;/p&gt;<br>
+                      &lt;/div&gt;<br>
+                      &lt;div id=&quot;div4&quot;<br>
+                      style=&quot;position:absolute;top:185px;left:541px;width:100;height:100;font-<br>
+                      size:100;text-align:center;background-color:blue;<br>
+                      filter:revealtrans(transition=4,duration=1.5)&quot;<br>
+                      onfilterchange=&quot;done(4)&quot;&gt; <br>
+                      &lt;p&gt;A&lt;/p&gt;<br>
+                      &lt;/div&gt;</p>
+                    </div></td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+    <td background="07_list_r2_c3.jpg">&nbsp;</td>
+    <td><img src="spacer.gif" width="1" height="375" border="0" alt=""></td>
+  </tr>
+  <tr> 
+    <td><img name="n07_list_r3_c1" src="07_list_r3_c1.jpg" width="20" height="40" border="0" alt=""></td>
+    <td background="07_list_r3_c2.jpg">&nbsp;</td>
+    <td><img name="n07_list_r3_c3" src="07_list_r3_c3.jpg" width="27" height="40" border="0" alt=""></td>
+    <td><img src="spacer.gif" width="1" height="40" border="0" alt=""></td>
+  </tr>
+</table>
+
+        </body>
+  </html>

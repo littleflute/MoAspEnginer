@@ -1,0 +1,101 @@
+BODY {
+	BACKGROUND-COLOR: #ffffff; COLOR: #000003; FONT-FAMILY: "宋体"; FONT-SIZE: 12px; LINE-HEIGHT: 120%; scrollbar-face-color: #DEE3E7; scrollbar-highlight-color: #FFFFFF; scrollbar-shadow-color: #DEE3E7; scrollbar-3dlight-color: #D1D7DC; scrollbar-arrow-color: #006699; scrollbar-track-color: #EFEFEF; scrollbar-darkshadow-color: #98AAB1
+}
+TD {
+	FONT-FAMILY: "宋体"; FONT-SIZE: 12px; LINE-HEIGHT: 120%
+}
+A {
+	FONT-FAMILY: "宋体"; FONT-SIZE: 12px; LINE-HEIGHT: 120%
+}
+INPUT {
+	FONT-FAMILY: "宋体"
+	FONT-SIZE: 12px
+}
+SELECT {
+	FONT-FAMILY: "宋体"
+	FONT-SIZE: 12px
+}
+TEXTAREA {
+	FONT-FAMILY: "宋体"
+	FONT-SIZE: 12px
+}
+OPTION {
+	FONT-FAMILY: "宋体"
+	FONT-SIZE: 12px
+}
+.bian1 {
+	BORDER-BOTTOM: #888888 1px solid; BORDER-LEFT: #888888 1px solid; BORDER-RIGHT: #888888 1px solid; BORDER-TOP: #888888 1px solid
+}
+.bottomindex {
+	COLOR: #333333; FILTER: dropshadow(color=#FFFFFF,offx=-1,offy=1,positive=1)
+        FONT-FAMILY:"宋体"; FONT-SIZE: 12px
+}
+A:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #0066ff; TEXT-DECORATION: underline
+}
+A:visited {
+	TEXT-DECORATION: none
+}
+#TopMenu A:link {
+	COLOR: white; LINE-HEIGHT: 120%; TEXT-DECORATION: none
+}
+#TopMenu A:active {
+	COLOR: yellow; TEXT-DECORATION: none
+}
+#TopMenu A:visited {
+	COLOR: gainsboro; LINE-HEIGHT: 120%; TEXT-DECORATION: none
+}
+#TopMenu A:hover {
+	COLOR: yellow; LINE-HEIGHT: 120%; TEXT-DECORATION: none
+}
+#nav_menu A:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+#nav_menu A:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+#nav_menu A:active {
+	COLOR: #ff0033; TEXT-DECORATION: none
+}
+#nav_menu A:hover {
+	COLOR: #ff3333; TEXT-DECORATION: underline
+}
+.tdbBig {
+	FONT-SIZE: 12px; LINE-HEIGHT: 120%
+}
+.ArticleList {
+	COLOR: #000000; FONT-SIZE: 12px; LINE-HEIGHT: 100%; TEXT-DECORATION: none; TbSoftList: 12px
+}
+A.ArticleList:link {
+	COLOR: #000000; FONT-SIZE: 12px; LINE-HEIGHT: 130%; TEXT-DECORATION: none; TbSoftList: 12px
+}
+A.ArticleList:active {
+	COLOR: #000000; FONT-SIZE: 12px; LINE-HEIGHT: 130%; TEXT-DECORATION: none; TbSoftList: 12px
+}
+A.ArticleList:visited {
+	COLOR: #000000; FONT-SIZE: 12px; LINE-HEIGHT: 130%; TEXT-DECORATION: none; TbSoftList: 12px
+}
+#TbSoftList A:link {
+	COLOR: #0033cc; TEXT-DECORATION: none
+}
+#TbSoftList A:hover {
+	COLOR: #ff6600; TEXT-DECORATION: underline
+}
+#TbSoftList A:visited {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+#hint {
+	BACKGROUND: #e3f0fe; BORDER-BOTTOM: #2789f5 1px solid; BORDER-LEFT: #2789f5 1px solid; BORDER-RIGHT: #2789f5 1px solid; BORDER-TOP: #2789f5 1px solid; FILTER: Alpha(Opacity=90, FinishOpacity=50, Style=0); LINE-HEIGHT: 12px; PADDING-BOTTOM: 2px; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; PADDING-TOP: 2px; POSITION: absolute; WIDTH: 140px; Z-INDEX: 9
+}
+A.me {
+	COLOR: #ffffff
+}
+A.me:visited {
+	COLOR: #ffffff; TEXT-DECORATION: none; TOP: 1px
+}
+A.me:hover {
+	COLOR: #cccccc; POSITION: relative; TEXT-DECORATION: none; TOP: 1px
+}

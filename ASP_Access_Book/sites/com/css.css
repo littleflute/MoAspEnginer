@@ -1,0 +1,33 @@
+body {  font-family: "Tahoma", "宋体"; font-size: 12px}
+td {  font-family: "宋体"; font-size: 12px}
+.big {  font-family: "宋体"; font-size: 14px}
+a:visited {  font-family: "宋体", "Tahoma"; color: #000000; text-decoration: none}
+a:link {  color: #000000; text-decoration: none}
+a:hover {  color: #000000; text-decoration: underline}
+a.b:active {
+	color: #000000;
+	text-decoration: none;
+	font-size: 12px;
+}
+a.b:link {
+	color: #000000;
+	text-decoration: none;
+	font-size: 12px;
+}
+a.b:visited {
+	color: #333333;
+	text-decoration: none;
+	font-size: 12px;
+}
+a.b:hover {
+	color: #FF0000;
+	text-decoration: underline;
+	font-size: 12px;
+}
+.h {  font-family: "宋体"; font-size: 12px; clip:   rect(   ); line-height: 18px}
+.copy {
+	font-family: "Tahoma";
+	font-size: 12px;
+	color: #FFFFFF;
+
+}

@@ -1,0 +1,377 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0017)http://localhost/ -->
+<HTML><HEAD><TITLE>在线教育</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<STYLE>TD {
+	FONT-SIZE: 9pt; LINE-HEIGHT: 140%
+}
+BODY {
+	FONT-SIZE: 9pt; LINE-HEIGHT: 140%
+}
+A:link {
+	COLOR: #0033cc; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #0033cc; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+.header {
+	FONT-SIZE: 9pt; COLOR: #ffffff; FONT-FAMILY: Tahoma, Verdana; BACKGROUND-COLOR: #00cccc
+}
+.category {
+	FONT-SIZE: 9pt; COLOR: #000000; FONT-FAMILY: Tahoma, Verdana; BACKGROUND-COLOR: #efefef
+}
+</STYLE>
+
+<SCRIPT language=javascript>
+function showdetail(id)
+{
+ window.open("detail.asp?id="+id,"detail","width=400,height=400,resizable=no,scrollbars=yes,menubar=no,status=no");
+}
+</SCRIPT>
+
+<META content="MSHTML 6.00.2900.2873" name=GENERATOR></HEAD>
+<BODY text=#000000 bgColor=#ffffff leftMargin=0 
+background=在线教育.files/crossbg.gif topMargin=0>
+<TABLE cellSpacing=0 cellPadding=0 width=740 align=center border=0>
+  <TBODY>
+  <TR>
+    <TD class=header height=4></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width=750 align=center border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top height=60><IMG height=93 src="在线教育.files/b.jpg" 
+    width=750></TD></TR></TBODY></TABLE>
+<TABLE style="BORDER-COLLAPSE: collapse" borderColor=#808080 cellPadding=0 
+width=750 align=center border=0>
+  <TBODY>
+  <TR class=header align=left height=22>
+    <TD bgColor=#0066cc>&nbsp;<STRONG>|&nbsp;<A 
+      href="http://localhost/index.asp"><FONT 
+      color=#ffffff>回到首页</FONT></A>&nbsp;| &nbsp;<A 
+      href="http://localhost/list.asp"><FONT 
+      color=#ffffff>资料列表</FONT></A>&nbsp;| &nbsp;<A 
+      href="http://localhost/teacherlist.asp"><FONT 
+      color=#ffffff>教师列表</FONT></A>&nbsp;| &nbsp;<A 
+      href="http://localhost/search.asp"><FONT 
+      color=#ffffff>综合搜索</FONT></A>&nbsp;| &nbsp;<A 
+      href="http://localhost/login.asp"><FONT 
+      color=#ffffff>教师登陆</FONT></A>&nbsp; | &nbsp;<A 
+      href="http://localhost/adminlogin.asp"><FONT 
+      color=#ffffff>管理员登陆</FONT></A>&nbsp;|</STRONG></TD></TR></TBODY></TABLE>
+<TABLE style="BORDER-COLLAPSE: collapse" borderColor=#808080 cellPadding=5 
+width=750 align=center bgColor=#ffffff border=0>
+  <TBODY>
+  <TR vAlign=top align=middle>
+    <TD width=170>
+      <TABLE style="BORDER-COLLAPSE: collapse" borderColor=#808080 cellPadding=1 
+      width="100%" align=center border=1>
+        <TBODY>
+        <TR>
+          <TD align=middle bgColor=#0099cc><STRONG><FONT 
+            color=#ffffff>管理员公告</FONT></STRONG></TD></TR>
+        <TR>
+          <TD vAlign=center align=middle>&nbsp;
+            <MARQUEE id=newslist onmouseover=newslist.stop() 
+            onmouseout=newslist.start() scrollAmount=1 scrollDelay=80 
+            direction=up width="90%" 
+      height=85>网站测试</MARQUEE></TD></TR></TBODY></TABLE><BR>
+      <FORM action=list.asp method=post>
+      <TABLE style="BORDER-COLLAPSE: collapse" borderColor=#808080 cellPadding=1 
+      width="100%" align=center border=1>
+        <TBODY>
+        <TR bgColor=#0099cc>
+          <TD align=middle colSpan=2><STRONG><FONT 
+            color=#ffffff>快速搜索</FONT></STRONG></TD></TR>
+        <TR>
+          <TD align=middle width=40>资料</TD>
+          <TD>&nbsp; <INPUT size=12 name=course></TD></TR>
+        <TR>
+          <TD align=middle>标题</TD>
+          <TD>&nbsp; <INPUT size=12 name=title></TD></TR>
+        <TR>
+          <TD align=middle>类型</TD>
+          <TD>&nbsp; <SELECT name=filetype> <OPTION value="" 
+              selected>请选择&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</OPTION> <OPTION 
+              value=1>教案学习</OPTION> <OPTION value=2>作业</OPTION> <OPTION 
+              value=3>论文</OPTION> <OPTION value=5>课堂练习</OPTION></SELECT> </TD></TR>
+        <TR>
+          <TD align=middle colSpan=2><INPUT type=submit value=搜索 name=submit2> 
+            &nbsp;&nbsp; <INPUT type=reset value=清空 name=reset2> 
+      </TD></TR></TBODY></TABLE></FORM></TD>
+    <TD width=430>
+      <TABLE style="BORDER-COLLAPSE: collapse" borderColor=#808080 cellPadding=1 
+      width="100%" align=center border=1>
+        <TBODY>
+        <TR bgColor=#ffffff>
+          <TD align=middle background=在线教育.files/d.jpg colSpan=4>最近更新</TD></TR>
+        <TR class=category align=middle>
+          <TD width=180>资料标题</TD>
+          <TD>教师姓名</TD>
+          <TD>更新日期</TD>
+          <TD>所属系</TD></TR>
+        <TR>
+          <TD align=left>&nbsp;<IMG src="在线教育.files/arrow.gif"> <A title=今天作业 
+            onclick=javascript:showdetail(13); 
+            href="http://localhost/#">今天作业</A> </TD>
+          <TD align=middle><A title=查看吴天的个人专集 
+            href="http://localhost/teacherinfo.asp?id=2">吴天</A></TD>
+          <TD align=middle>2004/2/29</TD>
+          <TD align=left>&nbsp;&nbsp;计算机系</TD></TR>
+        <TR>
+          <TD align=left>&nbsp;<IMG src="在线教育.files/arrow.gif"> <A 
+            title=计算机第一课作业 onclick=javascript:showdetail(12); 
+            href="http://localhost/#">计算机第一课作业</A> </TD>
+          <TD align=middle><A title=查看吴天的个人专集 
+            href="http://localhost/teacherinfo.asp?id=2">吴天</A></TD>
+          <TD align=middle>2004/2/28</TD>
+          <TD align=left>&nbsp;&nbsp;计算机系</TD></TR>
+        <TR>
+          <TD align=left>&nbsp;<IMG src="在线教育.files/arrow.gif"> <A 
+            title=计算机第二课作业 onclick=javascript:showdetail(11); 
+            href="http://localhost/#">计算机第二课作业</A> </TD>
+          <TD align=middle><A title=查看吴天的个人专集 
+            href="http://localhost/teacherinfo.asp?id=2">吴天</A></TD>
+          <TD align=middle>2004/2/28</TD>
+          <TD align=left>&nbsp;&nbsp;计算机系</TD></TR>
+        <TR>
+          <TD align=left>&nbsp;<IMG src="在线教育.files/arrow.gif"> <A 
+            title=计算机第三课作业 onclick=javascript:showdetail(10); 
+            href="http://localhost/#">计算机第三课作业</A> </TD>
+          <TD align=middle><A title=查看吴天的个人专集 
+            href="http://localhost/teacherinfo.asp?id=2">吴天</A></TD>
+          <TD align=middle>2004/2/28</TD>
+          <TD align=left>&nbsp;&nbsp;计算机系</TD></TR>
+        <TR>
+          <TD align=left>&nbsp;<IMG src="在线教育.files/arrow.gif"> <A 
+            title=计算机第四课作业 onclick=javascript:showdetail(9); 
+            href="http://localhost/#">计算机第四课作业</A> </TD>
+          <TD align=middle><A title=查看吴天的个人专集 
+            href="http://localhost/teacherinfo.asp?id=2">吴天</A></TD>
+          <TD align=middle>2004/2/28</TD>
+          <TD align=left>&nbsp;&nbsp;计算机系</TD></TR>
+        <TR>
+          <TD align=left>&nbsp;<IMG src="在线教育.files/arrow.gif"> <A 
+            title=计算机第四课 onclick=javascript:showdetail(8); 
+            href="http://localhost/#">计算机第四课</A> </TD>
+          <TD align=middle><A title=查看吴天的个人专集 
+            href="http://localhost/teacherinfo.asp?id=2">吴天</A></TD>
+          <TD align=middle>2004/2/28</TD>
+          <TD align=left>&nbsp;&nbsp;计算机系</TD></TR>
+        <TR>
+          <TD align=left>&nbsp;<IMG src="在线教育.files/arrow.gif"> <A 
+            title=计算机第三课 onclick=javascript:showdetail(7); 
+            href="http://localhost/#">计算机第三课</A> </TD>
+          <TD align=middle><A title=查看吴天的个人专集 
+            href="http://localhost/teacherinfo.asp?id=2">吴天</A></TD>
+          <TD align=middle>2004/2/28</TD>
+          <TD align=left>&nbsp;&nbsp;计算机系</TD></TR>
+        <TR>
+          <TD align=left>&nbsp;<IMG src="在线教育.files/arrow.gif"> <A title=计算机2 
+            onclick=javascript:showdetail(6); href="http://localhost/#">计算机2</A> 
+          </TD>
+          <TD align=middle><A title=查看吴天的个人专集 
+            href="http://localhost/teacherinfo.asp?id=2">吴天</A></TD>
+          <TD align=middle>2004/2/28</TD>
+          <TD align=left>&nbsp;&nbsp;计算机系</TD></TR>
+        <TR>
+          <TD align=left>&nbsp;<IMG src="在线教育.files/arrow.gif"> <A 
+            title=计算机基本知识1 onclick=javascript:showdetail(5); 
+            href="http://localhost/#">计算机基本知识1</A> </TD>
+          <TD align=middle><A title=查看吴天的个人专集 
+            href="http://localhost/teacherinfo.asp?id=2">吴天</A></TD>
+          <TD align=middle>2004/2/28</TD>
+          <TD align=left>&nbsp;&nbsp;计算机系</TD></TR>
+        <TR>
+          <TD align=left>&nbsp;<IMG src="在线教育.files/arrow.gif"> <A title=简介 
+            onclick=javascript:showdetail(1); href="http://localhost/#">简介</A> 
+          </TD>
+          <TD align=middle><A title=查看changfu的个人专集 
+            href="http://localhost/teacherinfo.asp?id=1">changfu</A></TD>
+          <TD align=middle>2004/2/26</TD>
+          <TD align=left>&nbsp;&nbsp;政治系</TD></TR></TBODY></TABLE></TD>
+    <TD width=150>
+      <TABLE style="BORDER-COLLAPSE: collapse" borderColor=#808080 cellPadding=1 
+      width="100%" align=center border=1>
+        <FORM action=check.asp method=post>
+        <TBODY>
+        <TR bgColor=#0099cc>
+          <TD align=middle colSpan=2><STRONG><FONT 
+            color=#ffffff>教师登陆</FONT></STRONG></TD></TR>
+        <TR>
+          <TD align=middle width=45>登录名</TD>
+          <TD align=left>&nbsp;<INPUT title=请输入您的登录名或ID size=10 name=id></TD></TR>
+        <TR>
+          <TD align=middle width=45>密码</TD>
+          <TD align=left>&nbsp;<INPUT title=请输入您的密码 type=password size=10 
+            name=password></TD></TR>
+        <TR>
+          <TD align=middle width=45>验证码</TD>
+          <TD align=left>&nbsp;<INPUT title=请输入右侧的数字 size=4 name=verifycode> 
+            <IMG src="在线教育.files/num.bmp"> </TD></TR>
+        <TR>
+          <TD align=middle colSpan=2><INPUT type=submit value=登陆 name=submit> 
+            &nbsp;&nbsp;</TD></TR></FORM></TBODY></TABLE><IMG height=138 
+      src="在线教育.files/e.jpg" width=150></TD></TR></TBODY></TABLE>
+<TABLE style="BORDER-COLLAPSE: collapse" borderColor=#808080 cellPadding=5 
+width=750 align=center bgColor=#ffffff border=0>
+  <TBODY>
+  <TR vAlign=top align=middle>
+    <TD width=170>
+      <TABLE style="BORDER-COLLAPSE: collapse" borderColor=#808080 cellPadding=1 
+      width="100%" align=center border=1>
+        <TBODY>
+        <TR>
+          <TD align=middle bgColor=#0099cc><FONT 
+            color=#ffffff><STRONG>新注册用户</STRONG></FONT></TD></TR>
+        <TR height=90>
+          <TD vAlign=top align=left>&nbsp;<FONT face=Wingdings 
+            color=#42a5f7>v</FONT>&nbsp;<A title=查看曹影的个人专集 
+            href="http://localhost/teacherinfo.asp?id=12">曹影</A>（中文）<BR>&nbsp;<FONT 
+            face=Wingdings color=#42a5f7>v</FONT>&nbsp;<A title=查看曹盖的个人专集 
+            href="http://localhost/teacherinfo.asp?id=11">曹盖</A>（科学系）<BR>&nbsp;<FONT 
+            face=Wingdings color=#42a5f7>v</FONT>&nbsp;<A title=查看赵中亮的个人专集 
+            href="http://localhost/teacherinfo.asp?id=10">赵中亮</A>（科学系）<BR>&nbsp;<FONT 
+            face=Wingdings color=#42a5f7>v</FONT>&nbsp;<A title=查看赵亮的个人专集 
+            href="http://localhost/teacherinfo.asp?id=9">赵亮</A>（科学系）<BR>&nbsp;<FONT 
+            face=Wingdings color=#42a5f7>v</FONT>&nbsp;<A title=查看木林审的个人专集 
+            href="http://localhost/teacherinfo.asp?id=8">木林审</A>（中文）<BR>&nbsp;<FONT 
+            face=Wingdings color=#42a5f7>v</FONT>&nbsp;<A title=查看张与周的个人专集 
+            href="http://localhost/teacherinfo.asp?id=7">张与周</A>（中文）<BR>&nbsp;<FONT 
+            face=Wingdings color=#42a5f7>v</FONT>&nbsp;<A title=查看龙在天下的个人专集 
+            href="http://localhost/teacherinfo.asp?id=6">龙在天下</A>（计算机系）<BR>&nbsp;<FONT 
+            face=Wingdings color=#42a5f7>v</FONT>&nbsp;<A title=查看海阔天空的个人专集 
+            href="http://localhost/teacherinfo.asp?id=5">海阔天空</A>（计算机系）<BR>&nbsp;<FONT 
+            face=Wingdings color=#42a5f7>v</FONT>&nbsp;<A title=查看吴思贤的个人专集 
+            href="http://localhost/teacherinfo.asp?id=3">吴思贤</A>（中文系）<BR>&nbsp;<FONT 
+            face=Wingdings color=#42a5f7>v</FONT>&nbsp;<A title=查看吴天的个人专集 
+            href="http://localhost/teacherinfo.asp?id=2">吴天</A>（计算机系）<BR>&nbsp;<FONT 
+            face=Wingdings color=#42a5f7>v</FONT>&nbsp;<A title=查看changfu的个人专集 
+            href="http://localhost/teacherinfo.asp?id=1">changfu</A>（政治系）<BR></TD></TR></TBODY></TABLE></TD>
+    <TD width=430>
+      <TABLE style="BORDER-COLLAPSE: collapse" borderColor=#808080 cellPadding=1 
+      width="100%" align=center border=1>
+        <TBODY>
+        <TR class=header bgColor=#ffffff>
+          <TD align=middle background=在线教育.files/d.jpg colSpan=4><FONT 
+            color=#000000>阅读排行</FONT></TD></TR>
+        <TR class=category align=middle>
+          <TD width=180>资料标题</TD>
+          <TD>教师姓名</TD>
+          <TD>阅读次数</TD>
+          <TD>所属系</TD></TR>
+        <TR>
+          <TD align=left>&nbsp;<IMG src="在线教育.files/arrow.gif"> <A title=简介 
+            onclick=javascript:showdetail(1); href="http://localhost/#">简介</A> 
+          </TD>
+          <TD align=middle><A title=查看changfu的个人专集 
+            href="http://localhost/teacherinfo.asp?id=1">changfu</A></TD>
+          <TD align=middle>3</TD>
+          <TD align=left>&nbsp;&nbsp;政治系</TD></TR>
+        <TR>
+          <TD align=left>&nbsp;<IMG src="在线教育.files/arrow.gif"> <A 
+            title=计算机基本知识1 onclick=javascript:showdetail(5); 
+            href="http://localhost/#">计算机基本知识1</A> </TD>
+          <TD align=middle><A title=查看吴天的个人专集 
+            href="http://localhost/teacherinfo.asp?id=2">吴天</A></TD>
+          <TD align=middle>2</TD>
+          <TD align=left>&nbsp;&nbsp;计算机系</TD></TR>
+        <TR>
+          <TD align=left>&nbsp;<IMG src="在线教育.files/arrow.gif"> <A 
+            title=计算机第一课作业 onclick=javascript:showdetail(12); 
+            href="http://localhost/#">计算机第一课作业</A> </TD>
+          <TD align=middle><A title=查看吴天的个人专集 
+            href="http://localhost/teacherinfo.asp?id=2">吴天</A></TD>
+          <TD align=middle>2</TD>
+          <TD align=left>&nbsp;&nbsp;计算机系</TD></TR>
+        <TR>
+          <TD align=left>&nbsp;<IMG src="在线教育.files/arrow.gif"> <A title=今天作业 
+            onclick=javascript:showdetail(13); 
+            href="http://localhost/#">今天作业</A> </TD>
+          <TD align=middle><A title=查看吴天的个人专集 
+            href="http://localhost/teacherinfo.asp?id=2">吴天</A></TD>
+          <TD align=middle>2</TD>
+          <TD align=left>&nbsp;&nbsp;计算机系</TD></TR>
+        <TR>
+          <TD align=left>&nbsp;<IMG src="在线教育.files/arrow.gif"> <A 
+            title=计算机第四课 onclick=javascript:showdetail(8); 
+            href="http://localhost/#">计算机第四课</A> </TD>
+          <TD align=middle><A title=查看吴天的个人专集 
+            href="http://localhost/teacherinfo.asp?id=2">吴天</A></TD>
+          <TD align=middle>1</TD>
+          <TD align=left>&nbsp;&nbsp;计算机系</TD></TR>
+        <TR>
+          <TD align=left>&nbsp;<IMG src="在线教育.files/arrow.gif"> <A 
+            title=计算机第四课作业 onclick=javascript:showdetail(9); 
+            href="http://localhost/#">计算机第四课作业</A> </TD>
+          <TD align=middle><A title=查看吴天的个人专集 
+            href="http://localhost/teacherinfo.asp?id=2">吴天</A></TD>
+          <TD align=middle>0</TD>
+          <TD align=left>&nbsp;&nbsp;计算机系</TD></TR>
+        <TR>
+          <TD align=left>&nbsp;<IMG src="在线教育.files/arrow.gif"> <A 
+            title=计算机第三课 onclick=javascript:showdetail(7); 
+            href="http://localhost/#">计算机第三课</A> </TD>
+          <TD align=middle><A title=查看吴天的个人专集 
+            href="http://localhost/teacherinfo.asp?id=2">吴天</A></TD>
+          <TD align=middle>0</TD>
+          <TD align=left>&nbsp;&nbsp;计算机系</TD></TR>
+        <TR>
+          <TD align=left>&nbsp;<IMG src="在线教育.files/arrow.gif"> <A title=计算机2 
+            onclick=javascript:showdetail(6); href="http://localhost/#">计算机2</A> 
+          </TD>
+          <TD align=middle><A title=查看吴天的个人专集 
+            href="http://localhost/teacherinfo.asp?id=2">吴天</A></TD>
+          <TD align=middle>0</TD>
+          <TD align=left>&nbsp;&nbsp;计算机系</TD></TR>
+        <TR>
+          <TD align=left>&nbsp;<IMG src="在线教育.files/arrow.gif"> <A 
+            title=计算机第三课作业 onclick=javascript:showdetail(10); 
+            href="http://localhost/#">计算机第三课作业</A> </TD>
+          <TD align=middle><A title=查看吴天的个人专集 
+            href="http://localhost/teacherinfo.asp?id=2">吴天</A></TD>
+          <TD align=middle>0</TD>
+          <TD align=left>&nbsp;&nbsp;计算机系</TD></TR></TBODY></TABLE></TD>
+    <TD width=150>
+      <TABLE style="BORDER-COLLAPSE: collapse" borderColor=#808080 cellPadding=1 
+      width="100%" align=center border=1>
+        <TBODY>
+        <TR>
+          <TD align=middle bgColor=#0099cc><FONT 
+            color=#ffffff><STRONG>资源列表</STRONG></FONT></TD></TR>
+        <TR>
+          <TD vAlign=top align=left>
+            <CENTER>本站现有<BR></CENTER>&nbsp;<FONT face=Wingdings 
+            color=#42a5f7>v</FONT>&nbsp;<A 
+            href="http://localhost/teacherlist.asp">注册教师</A>：11<BR>&nbsp;<FONT 
+            face=Wingdings color=#42a5f7>v</FONT>&nbsp;<A 
+            href="http://localhost/list.asp?filetype=1">教案学习</A>：6<BR>&nbsp;<FONT 
+            face=Wingdings color=#42a5f7>v</FONT>&nbsp;<A 
+            href="http://localhost/list.asp?filetype=2">作业</A>：6<BR>&nbsp;<FONT 
+            face=Wingdings color=#42a5f7>v</FONT>&nbsp;<A 
+            href="http://localhost/list.asp?filetype=3">论文</A>：0<BR>&nbsp;<FONT 
+            face=Wingdings color=#42a5f7>v</FONT>&nbsp;<A 
+            href="http://localhost/list.asp?filetype=5">课堂练习</A>：0<BR></TD></TR></TBODY></TABLE><BR>
+      <TABLE style="BORDER-COLLAPSE: collapse" borderColor=#808080 cellPadding=1 
+      width="100%" align=center border=1>
+        <TBODY>
+        <TR>
+          <TD align=middle bgColor=#0099cc><STRONG><FONT 
+            color=#ffffff>访问统计</FONT></STRONG></TD></TR>
+        <TR height=40>
+          <TD vAlign=top align=left>&nbsp;<FONT face=Wingdings 
+            color=#42a5f7>v</FONT>&nbsp;总访问量：30<BR>&nbsp;<FONT face=Wingdings 
+            color=#42a5f7>v</FONT>&nbsp;今日访问：3 
+</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE style="BORDER-COLLAPSE: collapse" borderColor=#808080 cellPadding=0 
+width=750 align=center border=0>
+  <TBODY>
+  <TR class=header align=left height=22>
+    <TD bgColor=#0066cc>
+      <DIV align=center>Copyright &copy;亮中计算机技术服务有限公司 2004</DIV></TD></TR></TBODY></TABLE>
+<CENTER></CENTER></BODY></HTML>

@@ -1,0 +1,214 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0047)http://localhost/javascript/bm/dao10.htm -->
+<HTML><HEAD><TITLE>目录式导航菜单</TITLE>
+<STYLE type=text/css>BODY {
+	MARGIN-TOP: 0px; FONT-SIZE: 9pt; MARGIN-LEFT: 0px; MARGIN-RIGHT: 0px; FONT-FAMILY: "宋体"
+}
+A {
+	FONT-WEIGHT: 400; FONT-SIZE: 9pt; COLOR: black; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-WEIGHT: 400; FONT-SIZE: 9pt; COLOR: red; TEXT-DECORATION: underline
+}
+A:active {
+	FONT: 9pt "宋体"; CURSOR: hand; COLOR: #ff0033
+}
+</STYLE>
+
+<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<SCRIPT language=javascript><!--
+function out()
+{
+if(window.event.toElement.id!="menu"        &&       window.event.toElement.id!="link")
+  menu.style.visibility="hidden";
+}
+
+function out1()
+{
+if(window.event.toElement.id!="menu1"        &&       window.event.toElement.id!="link")
+  menu1.style.visibility="hidden";
+}
+
+function out2()
+{
+if(window.event.toElement.id!="menu2"        &&       window.event.toElement.id!="link")
+  menu2.style.visibility="hidden";
+}
+//-->
+</SCRIPT>
+
+<META content="MSHTML 6.00.2900.2873" name=GENERATOR></HEAD>
+<BODY>
+<CENTER>
+  <table width="282" border="0" align="center" cellpadding="0" cellspacing="0">
+    <!-- fwtable fwsrc="未命名" fwbase="list_01.jpg" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="0" -->
+    <tr> 
+      <td><img src="spacer.gif" width="25" height="1" border="0" alt=""></td>
+      <td><img src="spacer.gif" width="58" height="1" border="0" alt=""></td>
+      <td><img src="spacer.gif" width="86" height="1" border="0" alt=""></td>
+      <td><img src="spacer.gif" width="56" height="1" border="0" alt=""></td>
+      <td><img src="spacer.gif" width="15" height="1" border="0" alt=""></td>
+      <td><img src="spacer.gif" width="42" height="1" border="0" alt=""></td>
+      <td><img src="spacer.gif" width="1" height="1" border="0" alt=""></td>
+    </tr>
+    <tr> 
+      <td colspan="2"><img name="list_01_r1_c1" src="list_01_r1_c1.jpg" width="83" height="102" border="0" alt=""></td>
+      <td colspan="2" background="list_01_r1_c3.jpg"><img src="list_01_r1_c3.jpg" width="548" height="102"></td>
+      <td colspan="2"><img name="list_01_r1_c5" src="list_01_r1_c5.jpg" width="57" height="102" border="0" alt=""></td>
+      <td><img src="spacer.gif" width="1" height="102" border="0" alt=""></td>
+    </tr>
+    <tr> 
+      <td background="list_01_r2_c1.jpg">&nbsp;</td>
+      <td colspan="4" valign="top"> <div align="center"> 
+          <table width="100%" border="0" cellpadding="5" cellspacing="5">
+            <tr> 
+              <td bgcolor="#FFE495"> <div align="center"><FONT face=隶书 color=red size=6>目录式导航菜单</FONT></div></td>
+            </tr>
+            <tr> 
+              <td bgcolor="#FFFFDD"> <div align="center"><strong>演示效果</strong></div></td>
+            </tr>
+            <tr> 
+              <td><div align="center"><br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                </div></td>
+            </tr>
+            <tr> 
+              <td bgcolor="#FFFFDD"> <div align="center"><strong>源代码</strong></div></td>
+            </tr>
+            <tr> 
+              <td><div align="center">脚本说明:<br>
+                  第一步:把如下代码加入&lt;head&gt;区域中<br>
+                  &lt;SCRIPT language=javascript&gt;&lt;!--<br>
+                  function out()<br>
+                  {<br>
+                  if(window.event.toElement.id!=&quot;menu&quot; &amp;&amp; window.event.toElement.id!=&quot;link&quot;)<br>
+                  menu.style.visibility=&quot;hidden&quot;;<br>
+                  }<br>
+                  //--&gt;
+                  <p>function out1()<br>
+                    {<br>
+                    if(window.event.toElement.id!=&quot;menu1&quot; &amp;&amp; 
+                    window.event.toElement.id!=&quot;link&quot;)<br>
+                    menu1.style.visibility=&quot;hidden&quot;;<br>
+                    }<br>
+                    //--&gt;<br>
+                    &lt;/SCRIPT&gt;</p>
+                  <p>第二步:把如下代码加入&lt;body&gt;区域中<br>
+                    &lt;div id=&quot;back&quot; onmouseout=&quot;out()&quot;style=&quot;position:absolute;top:180;left:310;width:160;height:40;z-index:1;visibility:visible;&quot;&gt;<br>
+                    &lt;span id=&quot;menubar&quot; onmouseover=&quot;menu.style.visibility='visible'&quot;&gt;<br>
+                    &lt;font color=red size=2&gt;菜单&lt;/span&gt;<br>
+                    &lt;div border=1 id=&quot;menu&quot; style=&quot;position:absolute;top:15;left:0;width:50;height:10;z-index:2;visibility:hidden;&quot;&gt;<br>
+                    &lt;a id=&quot;link&quot; href=&quot;rjxz.htm&quot;&gt;软件下载&lt;/a&gt;<br>
+                    &lt;a id=&quot;link&quot; href=&quot;yxxz.htm&quot;&gt;游戏下载&lt;/a&gt;<br>
+                    &lt;a id=&quot;link&quot; href=&quot;hjsj.htm&quot;&gt;黄金书籍&lt;/a&gt;<br>
+                    &lt;a id=&quot;link&quot; href=&quot;mntk.htm&quot;&gt;美女图库&lt;/a&gt;<br>
+                    &lt;a id=&quot;link&quot; href=&quot;mp3.htm&quot;&gt;MP3金曲&lt;/a&gt;<br>
+                    &lt;a id=&quot;link&quot; href=&quot;flash.htm&quot;&gt;FLASH&lt;/a&gt;<br>
+                    &lt;/div&gt;<br>
+                    &lt;/div&gt;<br>
+                    &lt;div id=&quot;back&quot; onmouseout=&quot;out1()&quot;style=&quot;position:absolute;top:180;left:370;width:160;height:40;z-index:3;visibility:visible;&quot;&gt;<br>
+                    &lt;span id=&quot;menubar&quot; onmouseover=&quot;menu1.style.visibility='visible'&quot;&gt;<br>
+                    &lt;font color=red size=2&gt;菜单&lt;/span&gt;<br>
+                    &lt;div border=1 id=&quot;menu1&quot; style=&quot;position:absolute;top:15;left:0;width:50;height:10;z-index:4;visibility:hidden;&quot;&gt;<br>
+                    &lt;a id=&quot;link&quot; href=&quot;rjxz.htm&quot;&gt;软件下载&lt;/a&gt;<br>
+                    &lt;a id=&quot;link&quot; href=&quot;yxxz.htm&quot;&gt;游戏下载&lt;/a&gt;<br>
+                    &lt;a id=&quot;link&quot; href=&quot;hjsj.htm&quot;&gt;黄金书籍&lt;/a&gt;<br>
+                    &lt;a id=&quot;link&quot; href=&quot;mntk.htm&quot;&gt;美女图库&lt;/a&gt;<br>
+                    &lt;a id=&quot;link&quot; href=&quot;mp3.htm&quot;&gt;MP3金曲&lt;/a&gt;<br>
+                    &lt;a id=&quot;link&quot; href=&quot;flash.htm&quot;&gt;FLASH&lt;/a&gt;<br>
+                    &lt;/div&gt;<br>
+                    &lt;/div&gt;<br>
+                  </p>
+                </div></td>
+            </tr>
+          </table>
+        </div></td>
+      <td background="list_01_r2_c6.jpg">&nbsp;</td>
+      <td><img src="spacer.gif" width="1" height="450" border="0" alt=""></td>
+    </tr>
+    <tr> 
+      <td background="list_01_r3_c2.jpg"> <div align="left"><img name="list_01_r3_c1" src="list_01_r3_c1.jpg" width="25" height="166" border="0" alt=""></div></td>
+      <td colspan="2" background="list_01_r3_c2.jpg">&nbsp;</td>
+      <td colspan="3" background="list_01_r3_c2.jpg"> <div align="right"><img name="list_01_r3_c4" src="list_01_r3_c4.jpg" width="113" height="166" border="0" alt=""></div></td>
+      <td><img src="spacer.gif" width="1" height="166" border="0" alt=""></td>
+    </tr>
+  </table>
+  <SCRIPT language=JavaScript src="目录式导航菜单.files/news.js"></SCRIPT>
+</CENTER>
+<CENTER>
+</CENTER><BR><BR>
+<CENTER>
+  <TABLE bgcolor="#FFFFFF" >
+    <TBODY>
+      <TR> 
+        <TD align=left width=450 height=150> <DIV id=back 
+      style="Z-INDEX: 1; LEFT: 211px; VISIBILITY: visible; WIDTH: 160px; POSITION: absolute; TOP: 205px; HEIGHT: 40px" 
+      onmouseout=out()><SPAN id=menubar 
+      onmouseover="menu.style.visibility='visible'"><FONT color=red 
+      size=2>文件</SPAN> 
+            <DIV id=menu 
+      style="Z-INDEX: 2; LEFT: 0px; VISIBILITY: hidden; WIDTH: 75px; POSITION: absolute; TOP: 15px; HEIGHT: 10px" 
+      border="1"><A id=link 
+      href="http://localhost/javascript/bm/time1.htm">颜色选择器</A> <A 
+      id=link href="http://localhost/javascript/bm/time2.htm">记录页面修改</A> <A id=link 
+      href="http://localhost/javascript/bm/time3.htm">静止图片&nbsp;&nbsp;</A> <A id=link 
+      href="http://localhost/javascript/bm/time4.htm">相片选择器</A> <A 
+      id=link href="http://localhost/javascript/bm/time5.htm">图片跟随鼠标</A> <A id=link 
+      href="http://localhost/javascript/bm/time6.htm">禁用鼠标左键</A> </DIV>
+          </DIV>
+          <DIV id=back 
+      style="Z-INDEX: 3; LEFT: 389px; VISIBILITY: visible; WIDTH: 160px; POSITION: absolute; TOP: 205px; HEIGHT: 40px" 
+      onmouseout=out1()><SPAN id=menubar 
+      onmouseover="menu1.style.visibility='visible'"><FONT color=red 
+      size=2>编辑</SPAN> 
+            <div id=menu1 
+      style="Z-INDEX: 4; LEFT: 0px; VISIBILITY: hidden; WIDTH: 50px; POSITION: absolute; TOP: 15px; HEIGHT: 10px" 
+      border="1"><a id=link 
+      href="http://localhost/javascript/bm/ye1.htm">软件下载</a> <a id=link 
+      href="http://localhost/javascript/bm/ye2.htm">游戏下载</a> <a id=link 
+      href="http://localhost/javascript/bm/ye3.htm">黄金书籍</a> <a id=link 
+      href="http://localhost/javascript/bm/ye4.htm">美女图库</a> <a id=link 
+      href="http://localhost/javascript/bm/ye5.htm">MP3金曲</a> <a id=link 
+      href="http://localhost/javascript/bm/ye6.htm">FLASH</a> </div>
+          </DIV>
+          <DIV id=back 
+      style="Z-INDEX: 3; LEFT: 568px; VISIBILITY: visible; WIDTH: 160px; POSITION: absolute; TOP: 204px; HEIGHT: 40px" 
+      onmouseout=out2()><SPAN id=menubar 
+      onmouseover="menu2.style.visibility='visible'"><FONT color=red 
+      size=2>帮助</SPAN> 
+            <DIV id=menu2 
+      style="Z-INDEX: 4; LEFT: 0px; VISIBILITY: hidden; WIDTH: 50px; POSITION: absolute; TOP: 15px; HEIGHT: 10px" 
+      border="1"><A id=link 
+      href="http://localhost/javascript/bm/dao1.htm">软件下载</A> <A id=link 
+      href="http://localhost/javascript/bm/dao2.htm">游戏下载</A> <A id=link 
+      href="http://localhost/javascript/bm/dao3.htm">黄金书籍</A> <A id=link 
+      href="http://localhost/javascript/bm/dao4.htm">美女图库</A> <A id=link 
+      href="http://localhost/javascript/bm/dao5.htm">MP3金曲</A> <A id=link 
+      href="http://localhost/javascript/bm/dao6.htm">FLASH</A> </DIV>
+          </DIV></TD>
+      </TR>
+    </TBODY>
+  </TABLE>
+</CENTER><BR><BR>
+<CENTER>
+  <SCRIPT language=JavaScript>
+
+<!-- hide
+
+function goHist(a) 
+
+{
+
+   history.go(a);
+
+}
+
+//-->
+
+</SCRIPT>
+</CENTER>
+</BODY></HTML>

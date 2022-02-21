@@ -1,0 +1,51 @@
+BODY {
+	SCROLLBAR-FACE-COLOR: #cccccc; FONT-SIZE: 9pt; SCROLLBAR-HIGHLIGHT-COLOR: #cccccc; SCROLLBAR-SHADOW-COLOR: #cccccc; COLOR: #000000; SCROLLBAR-3DLIGHT-COLOR: #d9d9d9; SCROLLBAR-ARROW-COLOR: #808080; SCROLLBAR-TRACK-COLOR: #f8f8f8; FONT-FAMILY: "verdana", "arial", "helvetica", "Tahoma"; SCROLLBAR-DARKSHADOW-COLOR: #808080
+}
+TD {
+	FONT-SIZE: 9pt; FONT-FAMILY: verdana,arial,helvetica,Tahoma
+}
+DIV {
+	FONT-SIZE: 9pt; FONT-FAMILY: verdana,arial,helvetica,Tahoma
+}
+FORM {
+	FONT-SIZE: 9pt; FONT-FAMILY: verdana,arial,helvetica,Tahoma
+}
+SELECT {
+	FONT-SIZE: 9pt
+}
+OPTION {
+	FONT-SIZE: 9pt
+}
+P {
+	FONT-SIZE: 9pt; FONT-FAMILY: verdana,arial,helvetica,Tahoma
+}
+BR {
+	FONT-SIZE: 9pt; FONT-FAMILY: verdana,arial,helvetica,Tahoma
+}
+A {
+	FONT-SIZE: 9pt; COLOR: #000000; FONT-FAMILY: verdana,arial,helvetica,Tahoma; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-SIZE: 9pt; COLOR: #ff0000; FONT-FAMILY: "verdana", "arial", "helvetica", "Tahoma"; TEXT-DECORATION: none
+}
+.informat01 {
+	FONT-SIZE: 9pt; FONT-FAMILY: verdana,arial,helvetica,Tahoma; BACKGROUND-COLOR: #efefef
+}
+.i02 {
+	BORDER-RIGHT: 1px solid; BORDER-TOP: 1px solid; FONT-SIZE: 9pt; BORDER-LEFT: 1px solid; COLOR: #000000; BORDER-BOTTOM: 1px solid; FONT-FAMILY: "verdana", "arial", "helvetica", "Tahoma"; BACKGROUND-COLOR: #efefef
+}
+.i03 {
+	BORDER-TOP-WIDTH: 1px; PADDING-RIGHT: 1px; PADDING-LEFT: 1px; BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 9pt; BORDER-LEFT-COLOR: #ffffff; BORDER-BOTTOM-WIDTH: 1px; BORDER-BOTTOM-COLOR: #c0c0c0; PADDING-BOTTOM: 1px; BORDER-TOP-COLOR: #ffffff; PADDING-TOP: 1px; HEIGHT: 20px; BACKGROUND-COLOR: #efefef; BORDER-RIGHT-WIDTH: 1px; BORDER-RIGHT-COLOR: #c0c0c0
+}
+.i04 {
+	BORDER-RIGHT: 1px solid; BORDER-TOP: 1px solid; FONT-SIZE: 9pt; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-LEFT: 1px solid; COLOR: #000000; BORDER-BOTTOM: 1px solid; FONT-FAMILY: "verdana", "arial", "helvetica", "Tahoma"
+}
+.i05 {
+	BORDER-RIGHT: 1px solid; BORDER-TOP: 1px solid; FONT-SIZE: 9pt; BORDER-LEFT: 1px solid; COLOR: #000000; BORDER-BOTTOM: 1px solid; FONT-FAMILY: "verdana", "arial", "helvetica", "Tahoma"; BACKGROUND-COLOR: #d9d9d9
+}
+.botton {
+	BORDER-RIGHT: #333333 1px ridge; PADDING-RIGHT: 1px; BORDER-TOP: #ffffff 1px ridge; PADDING-LEFT: 1px; FONT-SIZE: 9pt; PADDING-BOTTOM: 1px; BORDER-LEFT: #ffffff 1px ridge; COLOR: #000000; PADDING-TOP: 1px; BORDER-BOTTOM: #000000 1px ridge; FONT-FAMILY: "??"; HEIGHT: 20px; BACKGROUND-COLOR: #f1f1f1
+}
+.textfield {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; FONT-SIZE: 9pt; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid; FONT-FAMILY: "ËÎÌו"; BACKGROUND-COLOR: #ffffff
+}

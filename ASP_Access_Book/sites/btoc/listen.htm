@@ -1,0 +1,536 @@
+<html>
+<head>
+<title>网上试听</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<STYLE>BODY {
+	COLOR: #000000; FONT-FAMILY: 宋体; FONT-SIZE: 9pt; LINE-HEIGHT: 18px
+}
+TD {
+	COLOR: #535353; FONT-FAMILY: 宋体; FONT-SIZE: 9pt; LINE-HEIGHT: 18px
+}
+P {
+	COLOR: #000000; FONT-FAMILY: 宋体; FONT-SIZE: 9pt; LINE-HEIGHT: 18px
+}
+FORM {
+	COLOR: #000000; FONT-FAMILY: 宋体; FONT-SIZE: 9pt; LINE-HEIGHT: 18px
+}
+INPUT {
+	COLOR: #000000; FONT-FAMILY: 宋体; FONT-SIZE: 9pt; LINE-HEIGHT: 18px
+}
+PRE {
+	COLOR: #000000; FONT-FAMILY: 宋体; FONT-SIZE: 9pt; LINE-HEIGHT: 18px
+}
+A {
+	COLOR: #000000; FONT-FAMILY: 宋体; FONT-SIZE: 9pt; LINE-HEIGHT: 18px
+}
+.head {
+	COLOR: #000000; FONT-SIZE: 11pt; LINE-HEIGHT: 20px
+}
+A {
+	TEXT-DECORATION: none
+}
+.map {
+	COLOR: #2137d0; TEXT-DECORATION: none
+}
+A.map {
+	COLOR: #2137d0; TEXT-DECORATION: none
+}
+A.map:visited {
+	COLOR: #2137d0; TEXT-DECORATION: none
+}
+INPUT {
+	BACKGROUND-COLOR: #fbf9d2; BORDER-BOTTOM-COLOR: #000000; BORDER-BOTTOM-WIDTH: 1px; BORDER-LEFT-COLOR: #000000; BORDER-LEFT-WIDTH: 1px; BORDER-RIGHT-COLOR: #000000; BORDER-RIGHT-WIDTH: 1px; BORDER-TOP-COLOR: #000000; BORDER-TOP-WIDTH: 1px; paddine: 0
+}
+SELECT {
+	BACKGROUND-COLOR: #fbf9d2; BORDER-BOTTOM-COLOR: #000000; BORDER-BOTTOM-WIDTH: 1px; BORDER-LEFT-COLOR: #000000; BORDER-LEFT-WIDTH: 1px; BORDER-RIGHT-COLOR: #000000; BORDER-RIGHT-WIDTH: 1px; BORDER-TOP-COLOR: #000000; BORDER-TOP-WIDTH: 1px; paddine: 0
+}
+</STYLE>
+<script language="JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<script language="javascript" src="java_function.js"></script>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" onLoad="MM_preloadImages('indeximage/gouwu02.gif','indeximage/shoucang02.gif','indeximage/shouyin02.gif','indeximage/kefu02.gif')" topmargin="0"  leftmargin="2">
+<div align="center">
+  <table width="768" border="0" cellpadding="0" cellspacing="0">
+    <tr> 
+      <td rowspan="2"><img src="indeximage/logo.gif" width="157" height="98"></td>
+      <td height="62" colspan="6"><img src="indeximage/banner.gif" width="611" height="62"></td>
+    </tr>
+    <tr> 
+      <td><img src="indeximage/label2.gif" width="299" height="36" usemap="#Map" border="0"></td>
+      <td> <a href style="CURSOR: hand" onClick="window.open('shopbag.asp',null,'width=560,height=360,scrollbars=1')" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image40','','indeximage/gouwu02.gif',1)" target="_blank"><img name="Image40" border="0" src="indeximage/gouwu01.gif" width="76" height="36"></a></td>
+      <td><a href style="CURSOR: hand" onClick="window.open('favorite.asp',null,'width=560,height=360,scrollbars=1')" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image37','','indeximage/shoucang02.gif',1)" target="_blank"><img name="Image37" border="0" src="indeximage/shoucang01.gif" width="76" height="36"></a></td>
+      <td><a href style="CURSOR: hand" onClick="CheckCookie()" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image38','','indeximage/shouyin02.gif',1)" target="_blank"><img name="Image38" border="0" src="indeximage/shouyin01.gif" width="76" height="36"></a></td>
+      <td><a href style="CURSOR: hand" onClick="window.open('server.htm',null,'width=560,height=640,scrollbars=1')" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image39','','indeximage/kefu02.gif',1)" target="_blank"><img name="Image39" border="0" src="indeximage/kefu01.gif" width="84" height="36"></a></td>
+    </tr>
+  </table>
+  <map name="Map"> 
+    <area shape="rect" coords="88, 2, 145, 25">
+    <area shape="rect" coords="226,3,284,23" href="/xinpin.htm" >
+    <area shape="rect" coords="154, 3, 212, 26" href="play.htm">
+    <area shape="rect" coords="24, 3, 80, 24" href="index.asp">
+  </map>
+  <table width="768" border="0" cellspacing="0" cellpadding="0">
+  <tr valign="top"> 
+    <td background="try-image/ditu01.gif">
+      <table width="768" border="0" cellspacing="0" cellpadding="0">
+        <tr valign="top"> 
+          <td><img src="try-image/listen06.gif" width="246" height="43"></td>
+          <td><img src="try-image/listen02.gif" width="15" height="43"></td>
+          <td><img src="try-image/listen03.gif" width="246" height="43"></td>
+          <td><img src="try-image/listen04.gif" width="15" height="43"></td>
+          <td><img src="try-image/listen05.gif" width="246" height="43"></td>
+        </tr>
+        <tr valign="top"> 
+          <td height="165"> 
+              <table width="98%" border="0" cellspacing="0" cellpadding="2">
+                <tr> 
+                  <td align="center"><img src="pro-image/picture.jpg" width="80" height="90"></td>
+                  <td rowspan="4" valign="top"><b><font size="2" color="#990000">[商品名:</font><font size="2" color="#0000FF">站内测试标题</font></b><font size="2"><b><font color="#990000">]</font></b><br>
+                    站内测试暂无内容。 
+                  </font> </td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+              </table>
+          </td>
+          <td background="try-image/lisditu01.gif" height="165">&nbsp;</td>
+          <td height="165">
+              <table width="98%" border="0" cellspacing="0" cellpadding="2">
+                <tr> 
+                  <td align="center"><img src="pro-image/picture.jpg" width="80" height="90"></td>
+                  <td rowspan="4" valign="top"><font size="2" color="#990000"><b>[商品名:</b></font><b><font size="2" color="#0000FF">站内测试标题</font></b><font size="2"><b><font color="#990000">]</font></b><br>
+                  </font>站内测试暂无内容……</td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+              </table>
+          </td>
+          <td background="try-image/lisditu02.gif" height="165">&nbsp;</td>
+          <td height="165">
+              <table width="98%" border="0" cellspacing="0" cellpadding="2">
+                <tr> 
+                  <td align="center"><img src="pro-image/picture.jpg" width="80" height="90"></td>
+                  <td rowspan="4" valign="top"><b><font size="2" color="#990000">[商品名:</font></b><b><font size="2" color="#0000FF">站内测试标题</font></b><font size="2"><b><font color="#990000">]</font></b><br>
+                  </font><span style="LETTER-SPACING: 1px">站内测试暂无内容……</span></td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+              </table>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="try-image/listen06.gif" width="246" height="43"></td>
+          <td><img src="try-image/listen02.gif" width="15" height="43"></td>
+          <td><img src="try-image/listen03.gif" width="246" height="43"></td>
+          <td><img src="try-image/listen04.gif" width="15" height="43"></td>
+          <td><img src="try-image/listen05.gif" width="246" height="43"></td>
+        </tr>
+        <tr>
+          <td height="165"> 
+              <table width="98%" border="0" cellspacing="0" cellpadding="2">
+                <tr> 
+                  <td align="center"><img src="pro-image/picture.jpg" width="80" height="90"></td>
+                  <td rowspan="4" valign="top"><b><font size="2" color="#990000">[商品名:</font><font size="2" color="#0000FF">站内测试标题</font></b><font size="2"><b><font color="#990000">]</font></b><br>
+                    </font><span style="mso-ascii-font-family: Times New Roman; mso-hansi-font-family: Times New Roman">站内测试暂无内容。</span> 
+                  </td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+              </table>
+          </td>
+          <td background="try-image/lisditu01.gif" height="165">&nbsp;</td>
+          <td height="165">
+              <table width="98%" border="0" cellspacing="0" cellpadding="2">
+                <tr> 
+                  <td align="center"><img src="pro-image/picture.jpg" width="80" height="90"></td>
+                  <td rowspan="4" valign="top"><font size="2" color="#990000"><b>[商品名:</b></font><font size="2"><b><font color="#0000FF">站内测试标题</font><font color="#990000">]</font></b><br>
+                    </font>站内测试暂无内容。</td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+              </table>
+          </td>
+          <td background="try-image/lisditu02.gif" height="165">&nbsp;</td>
+          <td height="165">
+              <table width="98%" border="0" cellspacing="0" cellpadding="2">
+                <tr> 
+                  <td align="center"><img src="pro-image/picture.jpg" width="80" height="90"></td>
+                  <td rowspan="4" valign="top"><b><font size="2" color="#990000">[商品名:</font><font size="2" color="#0000FF">站内测试标题</font></b><font size="2"><b><font color="#990000">]</font></b><br>
+                    站内测试暂无内容。 
+                  </font></td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+              </table>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="try-image/listen06.gif" width="246" height="43"></td>
+          <td><img src="try-image/listen02.gif" width="15" height="43"></td>
+          <td><img src="try-image/listen03.gif" width="246" height="43"></td>
+          <td><img src="try-image/listen04.gif" width="15" height="43"></td>
+          <td><img src="try-image/listen05.gif" width="246" height="43"></td>
+        </tr>
+        <tr>
+          <td height="165"> 
+              <table width="98%" border="0" cellspacing="0" cellpadding="2">
+                <tr> 
+                  <td align="center"><img src="pro-image/picture.jpg" width="80" height="90"></td>
+                  <td rowspan="4" valign="top"><b><font size="2" color="#990000">[商品名:</font><font size="2" color="#0000FF">站内测试标题</font></b><font size="2"><b><font color="#990000">]</font></b><br>
+                    </font>站内测试暂无内容…… 
+                  </td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+              </table>
+          </td>
+          <td background="try-image/lisditu01.gif" height="165">&nbsp;</td>
+          <td height="165">
+              <table width="98%" border="0" cellspacing="0" cellpadding="2">
+                <tr> 
+                  <td align="center"><img src="pro-image/picture.jpg" width="80" height="90"></td>
+                  <td rowspan="4" valign="top"><font size="2" color="#990000"><b>[商品名:</b></font><b><font size="2" color="#0000FF">站内测试标题</font></b><font size="2"><b><font color="#990000">]</font></b><br>
+                    站内测试暂无内容...... 
+                  </font></td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+              </table>
+          </td>
+          <td background="try-image/lisditu02.gif" height="165">&nbsp;</td>
+          <td height="165">
+              <table width="98%" border="0" cellspacing="0" cellpadding="2">
+                <tr> 
+                  <td align="center"><img src="pro-image/picture.jpg" width="80" height="90"></td>
+                  <td rowspan="4" valign="top"><b><font size="2" color="#990000">[商品名:</font><font size="2" color="#0000FF">站内测试标题</font></b><font size="2"><b><font color="#990000">]</font></b><br>
+                  </font>站内测试暂无内容。</td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+              </table>
+          </td>
+        </tr>
+        <tr valign="top"> 
+          <td><img src="try-image/listen06.gif" width="246" height="43"></td>
+          <td><img src="try-image/listen02.gif" width="15" height="43"></td>
+          <td><img src="try-image/listen03.gif" width="246" height="43"></td>
+          <td><img src="try-image/listen04.gif" width="15" height="43"></td>
+          <td><img src="try-image/listen05.gif" width="246" height="43"></td>
+        </tr>
+        <tr valign="top"> 
+          <td height="189">
+              <table width="98%" border="0" cellspacing="0" cellpadding="2">
+                <tr> 
+                  <td align="center"><img src="pro-image/picture.jpg" width="80" height="90"></td>
+                  <td rowspan="4" valign="top"><b><font size="2" color="#990000">[商品名:</font><font size="2" color="#0000FF">站内测试标题</font></b><font size="2"><b><font color="#990000">]</font></b><br>
+                  </font>站内测试暂无内容，.........</td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+              </table>
+          </td>
+          <td background="try-image/lisditu01.gif" height="189">&nbsp;</td>
+          <td height="189">
+              <table width="98%" border="0" cellspacing="0" cellpadding="2">
+                <tr> 
+                  <td align="center"><img src="pro-image/picture.jpg" width="80" height="90"></td>
+                  <td rowspan="4" valign="top"><b><font size="2" color="#990000">[商品名:</font><font size="2" color="#0000FF">站内测试标题</font></b><font size="2"><b><font color="#990000">]</font></b><br>
+                  </font><font size="2">站内测试暂无内容。</font></td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+              </table>
+          </td>
+          <td background="/try-image/lisditu02.gif" height="189">&nbsp;</td>
+          <td height="189">
+              <table width="98%" border="0" cellspacing="0" cellpadding="2">
+                <tr> 
+                  <td align="center"><img src="pro-image/picture.jpg" width="80" height="90"></td>
+                  <td rowspan="4" valign="top"><b><font size="2" color="#990000">[商品名:</font><font size="2" color="#0000FF">站内测试标题</font></b><font size="2"><b><font color="#990000">]</font></b><br>
+                  </font><font size="2"> </font>站内测试暂无内容。</td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+              </table>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="try-image/listen01.gif" width="246" height="43"></td>
+          <td><img src="try-image/listen02.gif" width="15" height="43"></td>
+          <td><img src="try-image/listen03.gif" width="246" height="43"></td>
+          <td><img src="try-image/listen04.gif" width="15" height="43"></td>
+          <td><img src="try-image/listen05.gif" width="246" height="43"></td>
+        </tr>
+        <tr>
+          <td height="165"> 
+              <table width="98%" border="0" cellspacing="0" cellpadding="2" height="213">
+                <tr> 
+                  <td align="center" height="82"><img src="pro-image/picture.jpg" width="80" height="90"></td>
+                  <td rowspan="4" valign="top" height="209"><b><font size="2" color="#990000">[商品名:</font><font size="2" color="#0000FF">站内测试标题</font></b><font size="2"><b><font color="#990000">]</font></b><br>
+                    站内测试暂无内容....... 
+                  </font> </td>
+                </tr>
+                <tr> 
+                  <td width="29%" height="26">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td width="29%" height="26">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td width="29%" height="63">&nbsp;</td>
+                </tr>
+              </table>
+          </td>
+          <td background="try-image/lisditu01.gif" height="165">&nbsp;</td>
+          <td height="165">
+              <table width="98%" border="0" cellspacing="0" cellpadding="2">
+                <tr> 
+                  <td align="center"><img src="pro-image/picture.jpg" width="80" height="90"></td>
+                  <td rowspan="4" valign="top"><font size="2" color="#990000"><b>[商品名:</b></font><b><font size="2" color="#0000FF">站内测试标题</font></b><font size="2"><b><font color="#990000">]</font></b><br>
+                    </font>站内测试暂无内容&nbsp; 
+                    <p>　</p>
+                    <p>　</p>
+                  </td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+              </table>
+          </td>
+          <td background="try-image/lisditu02.gif" height="165">&nbsp;</td>
+          <td height="165">
+              <table width="98%" border="0" cellspacing="0" cellpadding="2">
+                <tr> 
+                  <td align="center"><img src="pro-image/picture.jpg" width="80" height="90"></td>
+                  <td rowspan="4" valign="top"><b><font size="2" color="#990000">[商品名:</font><font size="2" color="#0000FF">站内测试标题</font></b><font size="2"><b><font color="#990000">]</font></b><br>
+                    </font>站内测试暂无内容！<br>
+                    <p>　</p>
+                    <p>　</p>
+                  </td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+              </table>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="try-image/listen01.gif" width="246" height="43"></td>
+          <td><img src="try-image/listen02.gif" width="15" height="43"></td>
+          <td><img src="try-image/listen03.gif" width="246" height="43"></td>
+          <td><img src="try-image/listen04.gif" width="15" height="43"></td>
+          <td><img src="try-image/listen05.gif" width="246" height="43"></td>
+        </tr>
+        <tr>
+          <td height="189">
+              <table width="98%" border="0" cellspacing="0" cellpadding="2">
+                <tr> 
+                  <td align="center"><img src="pro-image/picture.jpg" width="80" height="90"></td>
+                  <td rowspan="4" valign="top"><b><font size="2" color="#990000">[商品名:</font><font size="2" color="#0000FF">站内测试标题</font></b><font size="2"><b><font color="#990000">]</font></b><br>
+                  站内测试暂无内容。</font></td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+              </table>
+          </td>
+          <td background="try-image/lisditu01.gif" height="189">&nbsp;</td>
+          <td height="189">
+              <table width="98%" border="0" cellspacing="0" cellpadding="2">
+                <tr> 
+                  <td align="center"><img src="pro-image/picture.jpg" width="80" height="90"></td>
+                  <td rowspan="4" valign="top"><b><font size="2" color="#990000">[商品名:</font><font size="2" color="#0000FF">站内测试标题</font></b><font size="2"><b><font color="#990000">]</font></b><br>
+                  站内测试暂无内容......</font></td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td width="29%">&nbsp;</td>
+                </tr>
+              </table>
+          </td>
+          <td background="try-image/lisditu02.gif" height="189">&nbsp;</td>
+          <td height="189">
+            <table width="98%" border="0" cellspacing="0" cellpadding="2">
+              <tr> 
+                <td align="center"></td>
+                <td rowspan="4" valign="top"></td>
+              </tr>
+              <tr> 
+                <td width="29%"></td>
+              </tr>
+              <tr> 
+                <td width="29%"></td>
+              </tr>
+              <tr> 
+                <td width="29%"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr valign="top"> 
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table width="768" border="0" cellspacing="0" height="128">
+  <tr>
+      <td height="36"><font color="#FF0000">&nbsp;&nbsp; </font></td>        
+  </tr>        
+  <tr>         
+    <td height="21">         
+      <hr width="100%" size="1" noshade>        
+    </td>        
+  </tr>        
+  <tr>         
+    <td align="center" height="20"><font size="2"><b>Copyright</b>:郑州亮中</font></td>        
+  </tr>        
+  <tr>         
+    <td align="center" height="20"><font size="2">　E-mail:          
+      <a href="mailto:xxxx@xxxx.com"><font color="#0000FF"><u>xxxx@xxxx.com</u></font></a></font></td>         
+  </tr>         
+  <tr>          
+    <td align="center" height="21">&nbsp;</td>         
+  </tr>         
+</table>         
+</div>         
+</body>         
+</html>         

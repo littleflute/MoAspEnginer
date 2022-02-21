@@ -1,0 +1,18 @@
+A:link {
+	COLOR: #0f0f0f; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #0f0f0f; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #0f0f0f; TEXT-DECORATION: underline
+}
+BODY {
+	FONT-SIZE: 9pt; MARGIN: 0px; SCROLLBAR-HIGHLIGHT-COLOR: buttonface; SCROLLBAR-SHADOW-COLOR: buttonface; COLOR: #0f0f0f; SCROLLBAR-3DLIGHT-COLOR: buttonhighlight; SCROLLBAR-ARROW-COLOR: #620202; SCROLLBAR-TRACK-COLOR: #eeeeee; SCROLLBAR-DARKSHADOW-COLOR: buttonshadow; BACKGROUND-COLOR: #56bdf5
+}
+TD {
+	FONT-SIZE: 9pt; LINE-HEIGHT: 150%; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.tips {
+	BORDER-RIGHT: #666666 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #666666 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 12px; FILTER: revealTrans(transition=26,duration=0.5) blendTrans(duration=0.5); VISIBILITY: hidden; PADDING-BOTTOM: 4px; BORDER-LEFT: #666666 1px solid; WIDTH: 128px; COLOR: #616161; LINE-HEIGHT: 18px; PADDING-TOP: 4px; BORDER-BOTTOM: #666666 1px solid; POSITION: absolute; BACKGROUND-COLOR: #ffffff
+}

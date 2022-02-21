@@ -1,0 +1,17 @@
+td {  font-size: 9pt; line-height: 12pt; color: #000000}
+a:link {  font-size: 9pt; color: #000000; text-decoration: none}
+a:visited {  font-size: 9pt; color: #000000; text-decoration: none}
+a:hover {  font-size: 9pt; color: #000000; text-decoration: underline}
+.td1 {  border: none}
+.soft {  text-indent: 8pt}
+.buttonface {  color: #000000; background-color: 6495ED; background-position: center center; border: #000000; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+.select {  color: #000000; background-color: #99CCFF; height: 20px; font-size: 9pt; width: 80px; clip:    rect(   )}
+.td2 {  border: #000000; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+.textarea {  background-color: #CCCCCC; border: #FFFFFF; border-style: dotted; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; color: #000000}
+.shadow {  filter: DropShadow(Color=yellow, OffX=1, OffY=1)}
+.font1 {  filter: DropShadow(Color=0192ff, OffX=3, OffY=3)}
+.smallinput {  color: #6495ED; border: #6495ED; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+.soft1 {  text-indent: 3pt}
+<!--
+BODY {SCROLLBAR-FACE-COLOR: #DEDFDF; SCROLLBAR-HIGHLIGHT-COLOR: #FAFAFC; SCROLLBAR-SHADOW-COLOR: #FAFAFC; SCROLLBAR-3DLIGHT-COLOR: #454545; SCROLLBAR-ARROW-COLOR:  #FAFAFC; SCROLLBAR-TRACK-COLOR: #FAFAFC; SCROLLBAR-DARKSHADOW-COLOR: #454545; }
+-->

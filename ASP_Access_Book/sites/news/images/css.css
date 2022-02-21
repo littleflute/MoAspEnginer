@@ -1,0 +1,49 @@
+BODY {	FONT-SIZE: 12px}
+TABLE {	FONT-SIZE: 12px}
+A:active {   COLOR: #ffffff; FONT-SIZE: 12px;  TEXT-DECORATION: none}
+A:link {	COLOR: #ffffff; FONT-SIZE: 12px; TEXT-DECORATION: none}
+A:hover {	COLOR: #ffff00; FONT-SIZE: 12px; TEXT-DECORATION: underline}
+A:visited {	COLOR: #ffffff; FONT-SIZE: 12px; TEXT-DECORATION: none}
+A.list1:link {	    COLOR: #003399; FONT-SIZE: 12px; TEXT-DECORATION: none}
+A.list1:visited {	COLOR: #003399; FONT-SIZE: 12px; TEXT-DECORATION: none}
+A.list1:active {	COLOR: #003399; FONT-SIZE: 12px; TEXT-DECORATION: none}
+A.list1:hover {	COLOR: #000000; FONT-SIZE: 12px; TEXT-DECORATION: underline}
+A.list2:link {	    COLOR: #ff0000; FONT-SIZE: 12px; TEXT-DECORATION: none}
+A.list2:visited {	COLOR: #ff0000; FONT-SIZE: 12px; TEXT-DECORATION: none}
+A.list2:active {	COLOR: #ff0000; FONT-SIZE: 12px; TEXT-DECORATION: none}
+A.list2:hover {	COLOR: #990000; FONT-SIZE: 12px; TEXT-DECORATION: none}
+A.list3:link {	    COLOR: #333333; FONT-SIZE: 14px; TEXT-DECORATION: none}
+A.list3:visited {	COLOR: #333333; FONT-SIZE: 14px; TEXT-DECORATION: none}
+A.list3:active {	COLOR: #333333; FONT-SIZE: 14px; TEXT-DECORATION: none}
+A.list3:hover {	COLOR: #990000; FONT-SIZE: 14px; TEXT-DECORATION: underline}
+A.list4:link {	    COLOR: #FF7C00; FONT-SIZE: 12px; TEXT-DECORATION: none}
+A.list4:visited {	COLOR: #FF7C00; FONT-SIZE: 12px; TEXT-DECORATION: none}
+A.list4:active {	COLOR: #FF7C00; FONT-SIZE: 12px; TEXT-DECORATION: none}
+A.list4:hover {	COLOR: #333333; FONT-SIZE: 12px; TEXT-DECORATION: underline}
+A.list5:link {	    COLOR: #990000; FONT-SIZE: 12px; TEXT-DECORATION: none}
+A.list5:visited {	COLOR: #990000; FONT-SIZE: 12px; TEXT-DECORATION: none}
+A.list5:active {	COLOR: #990000; FONT-SIZE: 12px; TEXT-DECORATION: none}
+A.list5:hover {	COLOR: #ff0000; FONT-SIZE: 12px; TEXT-DECORATION: underline}
+A.list6:link {	    COLOR: #333333; FONT-SIZE: 12px; TEXT-DECORATION: none}
+A.list6:visited {	COLOR: #333333; FONT-SIZE: 12px; TEXT-DECORATION: none}
+A.list6:active {	COLOR: #333333; FONT-SIZE: 12px; TEXT-DECORATION: none}
+A.list6:hover {	COLOR: #ff5500; FONT-SIZE: 12px; TEXT-DECORATION: underline}
+
+.txt1 {
+	LINE-HEIGHT: 20px; LETTER-SPACING: 1px;
+}
+.txt2 {
+	 COLOR: #ffffff; LETTER-SPACING: 2px; 
+}
+.txt3 {
+	 COLOR: #cccccc; LINE-HEIGHT: 20px
+}
+.txt4 {
+	 FONT-SIZE: 14px;line-height:130%;
+}
+.txt5 {
+	line-height:130%; LETTER-SPACING: 2px; FONT-SIZE: 16px;COLOR: #990000; font-weight: bold;
+}
+.f1 {
+    BORDER-BOTTOM: #000000 1px double; BORDER-LEFT: #000000 1px double; BORDER-RIGHT: #000000 1px double; BORDER-TOP: #000000 1px double; COLOR: #CE0000; BACKGROUND-COLOR: #ffffff;FONT-SIZE: 12px; 
+}

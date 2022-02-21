@@ -1,0 +1,84 @@
+A:link {
+	COLOR: #666666; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #666666; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #275c96; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #333333; TEXT-DECORATION: none
+}
+A.01:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.01:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.01:active {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.01:hover {
+	COLOR: #333333; TEXT-DECORATION: none
+}
+.unnamed1 {
+	BACKGROUND-IMAGE: url(../../images/dhbg.gif); BACKGROUND-POSITION: 50% top; BACKGROUND-REPEAT: repeat-x
+}
+.unnamed2 {
+	BACKGROUND-IMAGE: url(../../images/tpbg1.gif); BACKGROUND-POSITION: 50% top; BACKGROUND-REPEAT: repeat-x
+}
+.unnamed3 {
+	BACKGROUND-IMAGE: url(../../images/l-zcfgbg.gif); BACKGROUND-POSITION: 50% top; BACKGROUND-REPEAT: repeat-x
+}
+.unnamed4 {
+	BACKGROUND-IMAGE: url(../../images/zcfg-tp2.gif); BACKGROUND-POSITION: center top; BACKGROUND-REPEAT: repeat-y
+}
+.unnamed5 {
+	BACKGROUND-IMAGE: url(../../images/zcfg-bg.gif); BACKGROUND-POSITION: center top; BACKGROUND-REPEAT: repeat-y
+}
+.wz16 {
+	COLOR: #466394; FONT-SIZE: 12px
+}
+.wz6 {
+	COLOR: #565656; FONT-SIZE: 12px
+}
+.unnamed6 {
+	BACKGROUND-ATTACHMENT: fixed; BACKGROUND-IMAGE: url(../../images/bg1.gif); BACKGROUND-POSITION: center top; BACKGROUND-REPEAT: repeat-x
+}
+.unnamed7 {
+	BACKGROUND-ATTACHMENT: fixed; BACKGROUND-IMAGE: url(../../images/mzdt-bg.gif); BACKGROUND-POSITION: 50% top; BACKGROUND-REPEAT: no-repeat
+}
+.wz7 {
+	COLOR: #565656; FONT-SIZE: 12px; LINE-HEIGHT: 20px
+}
+.wz8 {
+	COLOR: #000000; FONT-SIZE: 12px
+}
+.unnamed8 {
+	BACKGROUND-ATTACHMENT: fixed; BACKGROUND-IMAGE: url(../../images/zxzctp3.gif); BACKGROUND-POSITION: center top; BACKGROUND-REPEAT: repeat-x
+}
+.unnamed9 {
+	BACKGROUND-IMAGE: url(../../images/mzxgljtp3.gif); BACKGROUND-POSITION: center top; BACKGROUND-REPEAT: repeat-x
+}
+.unnamed10 {
+	BACKGROUND-ATTACHMENT: fixed; BACKGROUND-IMAGE: url(../../images/bg2.gif); BACKGROUND-POSITION: left top; BACKGROUND-REPEAT: repeat-x; COLOR: #565656; FONT-SIZE: 12px
+}
+.wz9 {
+	COLOR: #567b8e; FONT-SIZE: 12px
+}
+.wz {
+	COLOR: #313131; FONT-SIZE: 14px
+}
+.rjbg {
+	BACKGROUND-ATTACHMENT: fixed; BACKGROUND-IMAGE: url(../../images/rj-bg6.gif); BACKGROUND-POSITION: 50% top; BACKGROUND-REPEAT: repeat-x
+}
+.rjwz {
+	COLOR: #296402; FONT-SIZE: 12px
+}
+.rjbg1 {
+	BACKGROUND-ATTACHMENT: fixed; BACKGROUND-IMAGE: url(../../images/rj-bg7.gif); BACKGROUND-POSITION: center center; BACKGROUND-REPEAT: no-repeat
+}
+.unnamed11 {
+	BACKGROUND-ATTACHMENT: fixed; BACKGROUND-IMAGE: url(images/dhbg2.gif); BACKGROUND-POSITION: 50% top; BACKGROUND-REPEAT: repeat-x
+}

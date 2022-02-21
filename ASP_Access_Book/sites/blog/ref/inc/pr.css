@@ -1,0 +1,69 @@
+#prouter {
+	display:block;
+	width:100%;
+	line-height : normal;
+	}
+#prleft {
+	display:inline;
+	float:left;
+	width:44px;
+	height:19px;
+	margin:0px;
+	padding:0px 1px 1px 1px;
+	border-top:1px solid #73778A;
+	border-right:0px;
+	border-bottom:1px solid #73778A;
+	border-left:1px solid #73778A;
+	text-align:center;
+	background:#FFFFFF;
+	}
+#prright {
+	display:inline;
+	float:left;
+	width:18px;
+	height:18px;
+	margin:0px;
+	padding:1px;
+	border:1px solid #73778A;
+	background:#FFFFFF;
+	}
+#linner {
+	display:inline;
+	width:36px;
+	margin:0px;
+	padding:0px;
+	font-family:Arial;
+	font-size:9px;
+	text-align:center;
+	}
+#pr {
+	width:38px;
+	height:3px;
+	margin:0px;
+	padding:0px;
+	border:1px solid #73778A;
+	background:#FFFFFF;
+	font-size:0px;
+	text-align:left;
+	}
+#prinner {
+	height:3px;
+	margin:0px;
+	padding:0px;
+	border:0px;
+	font-size:0px;
+	background:#339966;
+	}
+#rinner {
+	width:100%;
+	height:100%;
+	float:left;
+	margin:0px;
+	padding:0px;
+	border:0px;
+	color:#ffffff;
+	font-size:12px;
+	font-family:Arial;
+	text-align:center;
+	background:#73778A;
+	}

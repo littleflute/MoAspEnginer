@@ -1,0 +1,31 @@
+<SCRIPT LANGUAGE=VBScript RUNAT=Server>
+SUB Application_OnStart
+  DIM Stats( 100, 3 )
+  Application( "Stats" ) = Stats
+END SUB
+</SCRIPT>
+
+<SCRIPT LANGUAGE=VBScript RUNAT=Server>
+SUB Application_OnEnd
+END SUB
+</SCRIPT>
+
+<SCRIPT LANGUAGE=VBScript RUNAT=Server>
+SUB Session_OnStart
+END SUB
+</SCRIPT>
+
+<SCRIPT LANGUAGE=VBScript RUNAT=Server>
+ SUB Session_OnEnd
+  Application.Lock
+  localStats = Application( "Stats" )
+  For i = 0 to UBOUND( localStats, 2 )
+    IF localStats( 0, i ) = Session.SessionID THEN
+      localStats( 0, i ) = ""
+      EXIT FOR 
+    END IF
+  NEXT
+  Application( "Stats" ) = localStats
+  Application.UnLock
+ END SUB
+</SCRIPT>

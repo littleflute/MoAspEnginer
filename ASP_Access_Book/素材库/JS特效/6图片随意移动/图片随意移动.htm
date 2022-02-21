@@ -1,0 +1,390 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0051)http://www.baron.com.cn/javascript/bm/picture20.htm -->
+<HTML><HEAD><TITLE>图片随意移动</TITLE>
+<STYLE type=text/css>BODY {
+	MARGIN-TOP: 0px; FONT-SIZE: 9pt; MARGIN-LEFT: 0px; MARGIN-RIGHT: 0px; FONT-FAMILY: "宋体"
+}
+A {
+	FONT-WEIGHT: 400; FONT-SIZE: 9pt; COLOR: black; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-WEIGHT: 400; FONT-SIZE: 9pt; COLOR: red; TEXT-DECORATION: underline
+}
+A:active {
+	FONT: 9pt "宋体"; CURSOR: hand; COLOR: #ff0033
+}
+</STYLE>
+
+<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<META content="MSHTML 6.00.2900.2873" name=GENERATOR></HEAD>
+<BODY onload=init()>
+<CENTER>
+  <table width="282" border="0" align="center" cellpadding="0" cellspacing="0">
+    <!-- fwtable fwsrc="未命名" fwbase="list_01.jpg" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="0" -->
+    <tr> 
+      <td><img src="spacer.gif" width="25" height="1" border="0" alt=""></td>
+      <td><img src="spacer.gif" width="58" height="1" border="0" alt=""></td>
+      <td><img src="spacer.gif" width="86" height="1" border="0" alt=""></td>
+      <td><img src="spacer.gif" width="56" height="1" border="0" alt=""></td>
+      <td><img src="spacer.gif" width="15" height="1" border="0" alt=""></td>
+      <td><img src="spacer.gif" width="42" height="1" border="0" alt=""></td>
+      <td><img src="spacer.gif" width="1" height="1" border="0" alt=""></td>
+    </tr>
+    <tr> 
+      <td colspan="2"><img name="list_01_r1_c1" src="list_01_r1_c1.jpg" width="83" height="102" border="0" alt=""></td>
+      <td colspan="2" background="list_01_r1_c3.jpg"><img src="list_01_r1_c3.jpg" width="548" height="102"></td>
+      <td colspan="2"><img name="list_01_r1_c5" src="list_01_r1_c5.jpg" width="57" height="102" border="0" alt=""></td>
+      <td><img src="spacer.gif" width="1" height="102" border="0" alt=""></td>
+    </tr>
+    <tr> 
+      <td background="list_01_r2_c1.jpg">&nbsp;</td>
+      <td colspan="4" valign="top"> <div align="center"> 
+          <table width="100%" border="0" cellpadding="5" cellspacing="5">
+            <tr> 
+              <td bgcolor="#FFE495"> <div align="center">图片随意移动</div></td>
+            </tr>
+            <tr> 
+              <td bgcolor="#FFFFDD"> <div align="center"><strong>演示效果</strong></div></td>
+            </tr>
+            <tr> 
+              <td><div align="center"><font color="#FF0000">请移动图片! </font><br>
+                </div></td>
+            </tr>
+            <tr> 
+              <td bgcolor="#FFFFDD"> <div align="center"><strong>源代码</strong></div></td>
+            </tr>
+            <tr> 
+              <td><div align="center">脚本说明:<br>
+                  第一步:把如下代码加入&lt;body&gt;区域中<br>
+                  &lt;style type=&quot;text/css&quot;&gt;<br>
+                  #plane1 {position:absolute; left:290; top:170; width:121; z-index:0}<br>
+                  #plane2 {position:absolute; left:400; top:250; width:118; z-index:0}<br>
+                  &lt;/style&gt;<br>
+                  &lt;SCRIPT LANGUAGE=&quot;JavaScript&quot;&gt;<br>
+                  //Modified by the CoffeeCup HTML Editor++<br>
+                  //http://www.coffeecup.com<br>
+                  // Global variables for platform branching<br>
+                  var isNav, isIE<br>
+                  if (parseInt(navigator.appVersion) &gt;= 4) {<br>
+                  if (navigator.appName == &quot;Netscape&quot;) {<br>
+                  isNav = true<br>
+                  } else {<br>
+                  isIE = true<br>
+                  }<br>
+                  }
+                  <p>// ***Begin CSS custom API Functions***<br>
+                    // Set zIndex property<br>
+                    function setZIndex(obj, zOrder) {<br>
+                    obj.zIndex = zOrder<br>
+                    }<br>
+                    // Position an object at a specific pixel coordinate<br>
+                    function shiftTo(obj, x, y) {<br>
+                    if (isNav) {<br>
+                    obj.moveTo(x,y)<br>
+                    } else {<br>
+                    obj.pixelLeft = x<br>
+                    obj.pixelTop = y<br>
+                    }<br>
+                    }<br>
+                    // ***End API Functions***</p>
+                  <p>// Global holds reference to selected element<br>
+                    var selectedObj<br>
+                    // Globals hold location of click relative to element<br>
+                    var offsetX, offsetY</p>
+                  <p>// Find out which element has been clicked on<br>
+                    function setSelectedElem(evt) {<br>
+                    if (isNav) {<br>
+                    // declare local var for use in upcoming loop<br>
+                    var testObj<br>
+                    // make copies of event coords for use in upcoming loop<br>
+                    var clickX = evt.pageX<br>
+                    var clickY = evt.pageY<br>
+                    // loop through all layers (starting with frontmost layer)<br>
+                    // to find if the event coordinates are in the layer<br>
+                    for (var i = document.layers.length - 1; i &gt;= 0; i--) {<br>
+                    testObj = document.layers[i]<br>
+                    if ((clickX &gt; testObj.left) &amp;&amp; <br>
+                    (clickX &lt; testObj.left + testObj.clip.width) &amp;&amp; 
+                    <br>
+                    (clickY &gt; testObj.top) &amp;&amp; <br>
+                    (clickY &lt; testObj.top + testObj.clip.height)) {<br>
+                    // if so, then set the global to the layer, bring it<br>
+                    // forward, and get outa here<br>
+                    selectedObj = testObj<br>
+                    setZIndex(selectedObj, 100)<br>
+                    return<br>
+                    }<br>
+                    }<br>
+                    } else {<br>
+                    // use IE event model to get the targeted element<br>
+                    var imgObj = window.event.srcElement<br>
+                    // make sure it's one of our planes<br>
+                    if (imgObj.parentElement.id.indexOf(&quot;plane&quot;) != 
+                    -1) {<br>
+                    // then set the global to the style property of the element,<br>
+                    // bring it forward, and say adios<br>
+                    selectedObj = imgObj.parentElement.style<br>
+                    setZIndex(selectedObj,100)<br>
+                    return<br>
+                    }<br>
+                    }<br>
+                    // the user probably clicked on the background<br>
+                    selectedObj = null<br>
+                    return<br>
+                    }<br>
+                    // Drag an element<br>
+                    function dragIt(evt) {<br>
+                    // operate only if a plane is selected<br>
+                    if (selectedObj) {<br>
+                    if (isNav) {<br>
+                    shiftTo(selectedObj, (evt.pageX - offsetX), (evt.pageY - offsetY))<br>
+                    } else {<br>
+                    shiftTo(selectedObj, (window.event.clientX - offsetX), (window.event.clientY 
+                    - offsetY))<br>
+                    // prevent further system response to dragging in IE<br>
+                    return false<br>
+                    }<br>
+                    }<br>
+                    }<br>
+                    // Set globals to connect with selected element<br>
+                    function engage(evt) {<br>
+                    setSelectedElem(evt)<br>
+                    if (selectedObj) {<br>
+                    // set globals that remember where the click is in relation 
+                    to the<br>
+                    // top left corner of the element so we can keep the element-to-cursor<br>
+                    // relationship constant throughout the drag<br>
+                    if (isNav) {<br>
+                    offsetX = evt.pageX - selectedObj.left<br>
+                    offsetY = evt.pageY - selectedObj.top<br>
+                    } else {<br>
+                    offsetX = window.event.offsetX<br>
+                    offsetY = window.event.offsetY<br>
+                    }<br>
+                    }<br>
+                    // block mouseDown event from forcing Mac to display<br>
+                    // contextual menu.<br>
+                    return false<br>
+                    }<br>
+                    // Restore elements and globals to initial values<br>
+                    function release(evt) {<br>
+                    if (selectedObj) {<br>
+                    setZIndex(selectedObj, 0)<br>
+                    selectedObj = null<br>
+                    }<br>
+                    }<br>
+                    // Turn on event capture for Navigator<br>
+                    function setNavEventCapture() {<br>
+                    if (isNav) {<br>
+                    document.captureEvents(Event.MOUSEDOWN | Event.MOUSEMOVE | 
+                    Event.MOUSEUP)<br>
+                    }<br>
+                    }<br>
+                    // Assign event handlers used by both Navigator and IE (called 
+                    by onLoad)<br>
+                    function init() {<br>
+                    if (isNav) {<br>
+                    setNavEventCapture()<br>
+                    }<br>
+                    // assign functions to each of the events (works for both 
+                    Navigator and IE)<br>
+                    document.onmousedown = engage<br>
+                    document.onmousemove = dragIt<br>
+                    document.onmouseup = release<br>
+                    }<br>
+                    &lt;/SCRIPT&gt; </p>
+                  <p><br>
+                    &lt;DIV ID=plane1&gt;&lt;IMG NAME=&quot;planePic1&quot; SRC=&quot;clock1.jpg&quot; 
+                    BORDER=0&gt;&lt;/DIV&gt;<br>
+                    &lt;DIV ID=plane2&gt;&lt;IMG NAME=&quot;planePic1&quot; SRC=&quot;clock2.jpg&quot; 
+                    BORDER=0&gt;&lt;/DIV&gt;</p>
+                  <p>第二步:把&lt;body&gt;区域中内容改为:<br>
+                    &lt;body bgcolor=&quot;#fef4d9&quot; onLoad=&quot;init()&quot;&gt;<br>
+                  </p>
+                </div></td>
+            </tr>
+          </table>
+        </div></td>
+      <td background="list_01_r2_c6.jpg">&nbsp;</td>
+      <td><img src="spacer.gif" width="1" height="450" border="0" alt=""></td>
+    </tr>
+    <tr> 
+      <td background="list_01_r3_c2.jpg"> <div align="left"><img name="list_01_r3_c1" src="list_01_r3_c1.jpg" width="25" height="166" border="0" alt=""></div></td>
+      <td colspan="2" background="list_01_r3_c2.jpg">&nbsp;</td>
+      <td colspan="3" background="list_01_r3_c2.jpg"> <div align="right"><img name="list_01_r3_c4" src="list_01_r3_c4.jpg" width="113" height="166" border="0" alt=""></div></td>
+      <td><img src="spacer.gif" width="1" height="166" border="0" alt=""></td>
+    </tr>
+  </table>
+  <SCRIPT language=JavaScript src="图片随意移动.files/news.js"></SCRIPT>
+</CENTER>
+<CENTER>
+  <TABLE bordercolor="#FFFFFF" bgcolor="#FFFFFF" >
+    <TBODY>
+  <TR>
+        <TD align=middle>&nbsp;</TD>
+      </TR>
+  <TR>
+    <TD align=middle>
+      <CENTER>
+      <STYLE type=text/css>#plane1 {
+	LEFT: 20px; WIDTH: 121px; POSITION: absolute; TOP: 50px
+}
+#plane2 {
+	LEFT: 600px; WIDTH: 118px; POSITION: absolute; TOP: 50px
+}
+</STYLE>
+
+      <SCRIPT language=JavaScript>
+//Modified by the CoffeeCup HTML Editor++
+var isNav, isIE
+if (parseInt(navigator.appVersion) >= 4) {
+	if (navigator.appName == "Netscape") {
+		isNav = true
+	} else {
+		isIE = true
+	}
+}
+
+// ***Begin CSS custom API Functions***
+// Set zIndex property
+function setZIndex(obj, zOrder) {
+	obj.zIndex = zOrder
+}
+// Position an object at a specific pixel coordinate
+function shiftTo(obj, x, y) {
+	if (isNav) {
+		obj.moveTo(x,y)
+	} else {
+		obj.pixelLeft = x
+		obj.pixelTop = y
+	}
+}
+// ***End API Functions***
+
+// Global holds reference to selected element
+var selectedObj
+// Globals hold location of click relative to element
+var offsetX, offsetY
+
+// Find out which element has been clicked on
+function setSelectedElem(evt) {
+	if (isNav) {
+		// declare local var for use in upcoming loop
+		var testObj
+		// make copies of event coords for use in upcoming loop
+		var clickX = evt.pageX
+		var clickY = evt.pageY
+		// loop through all layers (starting with frontmost layer)
+		// to find if the event coordinates are in the layer
+		for (var i = document.layers.length - 1; i >= 0; i--) {
+			testObj = document.layers[i]
+			if ((clickX > testObj.left) && 
+				(clickX < testObj.left + testObj.clip.width) && 
+				(clickY > testObj.top) && 
+				(clickY < testObj.top + testObj.clip.height)) {
+					// if so, then set the global to the layer, bring it
+					// forward, and get outa here
+					selectedObj = testObj
+					setZIndex(selectedObj, 100)
+					return
+			}
+		}
+	} else {
+		// use IE event model to get the targeted element
+		var imgObj = window.event.srcElement
+		// make sure it's one of our planes
+		if (imgObj.parentElement.id.indexOf("plane") != -1) {
+			// then set the global to the style property of the element,
+			// bring it forward, and say adios
+			selectedObj = imgObj.parentElement.style
+			setZIndex(selectedObj,100)
+			return
+		}
+	}
+	// the user probably clicked on the background
+	selectedObj = null
+	return
+}
+// Drag an element
+function dragIt(evt) {
+	// operate only if a plane is selected
+	if (selectedObj) {
+		if (isNav) {
+			shiftTo(selectedObj, (evt.pageX - offsetX), (evt.pageY - offsetY))
+		} else {
+			shiftTo(selectedObj, (window.event.clientX - offsetX), (window.event.clientY - offsetY))
+			// prevent further system response to dragging in IE
+			return false
+		}
+	}
+}
+// Set globals to connect with selected element
+function engage(evt) {
+	setSelectedElem(evt)
+	if (selectedObj) {
+		// set globals that remember where the click is in relation to the
+		// top left corner of the element so we can keep the element-to-cursor
+		// relationship constant throughout the drag
+		if (isNav) {
+			offsetX = evt.pageX - selectedObj.left
+			offsetY = evt.pageY - selectedObj.top
+		} else {
+			offsetX = window.event.offsetX
+			offsetY = window.event.offsetY
+		}
+	}
+	// block mouseDown event from forcing Mac to display
+	// contextual menu.
+	return false
+}
+// Restore elements and globals to initial values
+function release(evt) {
+	if (selectedObj) {
+		setZIndex(selectedObj, 0)
+		selectedObj = null
+	}
+}
+// Turn on event capture for Navigator
+function setNavEventCapture() {
+	if (isNav) {
+		document.captureEvents(Event.MOUSEDOWN | Event.MOUSEMOVE | Event.MOUSEUP)
+	}
+}
+// Assign event handlers used by both Navigator and IE (called by onLoad)
+function init() {
+	if (isNav) {
+		setNavEventCapture()
+	}
+	// assign functions to each of the events (works for both Navigator and IE)
+	document.onmousedown = engage
+	document.onmousemove = dragIt
+	document.onmouseup = release
+}
+</SCRIPT>
+
+      <DIV id=plane1><IMG height=100 alt=别烦我,忙着呢! src="dazui.gif" 
+      width=100 border=0 name=planePic1></DIV>
+      <DIV id=plane2><IMG height=100 alt=别烦我,忙着呢! src="dazui.gif" 
+      width=100 border=0 
+name=planePic1></DIV></CENTER></TD></TR></TBODY></TABLE>
+  <BR>
+</CENTER>
+<CENTER>
+  <SCRIPT language=JavaScript>
+
+<!-- hide
+
+function goHist(a) 
+
+{
+
+   history.go(a);
+
+}
+
+//-->
+
+</SCRIPT>
+  <BR>
+</CENTER>
+</BODY></HTML>

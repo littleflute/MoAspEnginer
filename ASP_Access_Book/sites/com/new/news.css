@@ -1,0 +1,66 @@
+A:visited {
+TEXT-DECORATION: none
+; color: #000000
+}
+A:active {
+	TEXT-DECORATION: none
+; color: #000000
+}
+A:hover {
+TEXT-DECORATION: underline overline
+; color: #ff0000
+}
+A:link {
+TEXT-DECORATION: none
+; color: #000000
+}
+TD {
+	FONT-SIZE: 9pt; FONT-FAMILY: 宋体
+}
+DIV {
+	FONT-SIZE: 9pt; FONT-FAMILY: 宋体
+}
+FORM {
+	FONT-SIZE: 9pt; FONT-FAMILY: 宋体
+}
+OPTION {
+	FONT-SIZE: 9pt; FONT-FAMILY: 宋体
+}
+P {
+	FONT-SIZE: 9pt; FONT-FAMILY: 宋体
+}
+TD {
+	FONT-SIZE: 9pt; FONT-FAMILY: 宋体
+}
+BR {
+	FONT-SIZE: 9pt; FONT-FAMILY: 宋体
+}
+BODY {
+	FONT-SIZE: 9pt; SCROLLBAR-HIGHLIGHT-COLOR: buttonface; SCROLLBAR-SHADOW-COLOR: buttonface; COLOR: #000000; SCROLLBAR-3DLIGHT-COLOR: buttonhighlight; SCROLLBAR-TRACK-COLOR: #eeeeee; FONT-FAMILY: "宋体"; SCROLLBAR-DARKSHADOW-COLOR: buttonshadow
+}
+.botton {
+	BORDER-RIGHT: #cfcfcf 1px solid; BORDER-TOP: #cfcfcf 1px solid; FONT-SIZE: 9pt; BORDER-LEFT: #cfcfcf 1px solid; COLOR: #FFFFFF; BORDER-BOTTOM: #cfcfcf 1px solid; FONT-FAMILY: "宋体"; BACKGROUND-COLOR: #383838
+}
+.input {
+	BORDER-RIGHT: 1px solid; BORDER-TOP: 1px solid; BORDER-LEFT: 1px solid; BORDER-BOTTOM: 1px solid
+}
+.show1 {
+	FONT-SIZE: 9pt; FILTER: DropShadow(Color=#000000, OffX=1.2, OffY=1.2, Positive=1)
+}
+A.yellow:visited {
+TEXT-DECORATION: underline
+; color: #000000
+}
+A.yellow:active {
+	TEXT-DECORATION: none
+; color: #000000
+}
+A.yellow:hover {
+TEXT-DECORATION: none
+; color: #000000
+}
+A.yellow:link {
+TEXT-DECORATION: underline
+; color: #000000
+}
+

@@ -1,0 +1,16 @@
+body {		
+overflow: hidden;
+WORD-WRAP: break-word;
+margin:0px 0px 0px 0px;
+font-family:"verdana", "arial", "sans-serif";
+color:#4C463A;
+font-size:12px;
+font-weight:normal;
+line-height:140%;
+padding:2px;		
+}
+	A 			{ color: #cc0000; text-decoration: none; } 
+	A:link		{ color: #cc0000; text-decoration: none; } 
+	A:visited	{ color: #cc0000; text-decoration: none; } 
+	A:active	{ color: #FF0000;  } 
+	A:hover		{ color: #FF0000;  }

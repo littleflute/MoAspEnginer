@@ -1,0 +1,9 @@
+<%
+	session("admin")=""
+	session("flag")=""
+			Response.write"<script>"
+			Response.write"alert('ÍË³ö³É¹¦');"
+			Response.write"parent.menu.location='left.asp';"
+			Response.write"window.location='admin.asp';"
+			Response.write"</script>"
+%>
